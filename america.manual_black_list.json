@@ -28,7 +28,7 @@
       ]
     },
     {
-      "s": "OTC:COTQF",
+      "s": "OTC:GHHC",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|15 >= INTRADAY_CHANGE_LIMIT",
@@ -41,6 +41,14 @@
         "change >= DAILY_CHANGE_LIMIT",
         "change|15 >= INTRADAY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "OTC:HHHEF",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
@@ -63,6 +71,13 @@
       "s": "OTC:SWMM",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "OTC:ZHUD",
+      "f": [
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
