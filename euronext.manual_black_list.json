@@ -1,9 +1,10 @@
 {
   "black_list": [
     {
-      "s": "EURONEXT:MLIFE",
+      "s": "EURONEXT:LAX",
       "f": [
-        "change|15 >= INTRADAY_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
   ]
