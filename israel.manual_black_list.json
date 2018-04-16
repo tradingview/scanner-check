@@ -1,14 +1,6 @@
 {
   "black_list": [
     {
-      "s": "TASE:DPRM",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "TASE:ISOP.L",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
@@ -22,6 +14,12 @@
     },
     {
       "s": "TASE:NFTA",
+      "f": [
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "TASE:NXGN-M",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
       ]
