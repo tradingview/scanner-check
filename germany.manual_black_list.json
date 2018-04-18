@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "FWB:8GS",
+      "f": [
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "FWB:VNA",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
@@ -10,6 +18,15 @@
       "s": "SWB:NOEJ",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "SWB:SASN",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
