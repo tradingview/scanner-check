@@ -1,17 +1,17 @@
 {
   "black_list": [
     {
-      "s": "ASX:BKP",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "ASX:BSP",
       "f": [
         "change|15 >= INTRADAY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "ASX:FYA",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
