@@ -1,39 +1,23 @@
 {
   "black_list": [
     {
-      "s": "TASE:ISOP.L",
+      "s": "TASE:CPHO-M",
       "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "TASE:MDPR",
+      "s": "TASE:MAYN-M",
       "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "TASE:MDVI",
+      "s": "TASE:ULTR-M",
       "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "TASE:NFTA",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "TASE:NXGN-M",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "TASE:TOPS",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
   ]

@@ -8,65 +8,40 @@
       ]
     },
     {
-      "s": "AMEX:PULS",
+      "s": "NASDAQ:HTBX",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "NASDAQ:EPIX",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "NASDAQ:LEVL",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "NASDAQ:NRC",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "NASDAQ:NVIV",
+      "s": "OTC:ASAE",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "NYSE:SMAR",
+      "s": "OTC:PFHO",
       "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "OTC:IGSC",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
+        "pre_change >= DAILY_CHANGE_LIMIT",
+        "pre_change|15 >= INTRADAY_CHANGE_LIMIT",
+        "pre_change|1W >= WEEKLY_CHANGE_LIMIT",
+        "pre_change|240 >= INTRADAY_CHANGE_LIMIT",
+        "pre_change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
       "s": "OTC:PGCG",
       "f": [
         "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "OTC:PVDG",
+      "f": [
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
