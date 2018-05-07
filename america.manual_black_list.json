@@ -8,10 +8,37 @@
       ]
     },
     {
-      "s": "NASDAQ:IMTE",
+      "s": "NASDAQ:BLNK",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NASDAQ:SBOT",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:AMRX",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:ARGD",
+      "f": [
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:ARGO",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
@@ -28,19 +55,6 @@
         "change|15 >= INTRADAY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "OTC:PGCG",
-      "f": [
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "OTC:STTH",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
   ]
