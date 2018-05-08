@@ -1,17 +1,19 @@
 {
   "black_list": [
     {
-      "s": "TSXV:FUU",
-      "f": [
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "TSXV:N",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "TSXV:POC",
+      "f": [
+        "change|15 >= INTRADAY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
@@ -24,7 +26,7 @@
       ]
     },
     {
-      "s": "TSXV:SEK",
+      "s": "TSXV:TLL.H",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|15 >= INTRADAY_CHANGE_LIMIT",
