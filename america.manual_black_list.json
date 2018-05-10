@@ -1,12 +1,6 @@
 {
   "black_list": [
     {
-      "s": "NASDAQ:EVLO",
-      "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "NASDAQ:NCTY",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
@@ -24,8 +18,9 @@
       ]
     },
     {
-      "s": "NYSE:APY",
+      "s": "OTC:FGCO",
       "f": [
+        "change >= DAILY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
