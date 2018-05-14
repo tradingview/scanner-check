@@ -7,24 +7,25 @@
       ]
     },
     {
-      "s": "SWB:NOEJ",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "SWB:USE",
-      "f": [
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "XETR:SGM",
+      "s": "SWB:BKS3",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "SWB:H2FA",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "SWB:NOEJ",
+      "f": [
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
       ]
     }
   ]
