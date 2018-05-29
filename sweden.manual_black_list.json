@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "OMXSTO:ENRO",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "OMXSTO:LLSW_B",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
