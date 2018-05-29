@@ -1,6 +1,20 @@
 {
   "black_list": [
     {
+      "s": "HKEX:1194",
+      "f": [
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "HKEX:1598",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "HKEX:1742",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
@@ -27,6 +41,21 @@
       ]
     },
     {
+      "s": "HKEX:2938",
+      "f": [
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "HKEX:3613",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "HKEX:4336",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
@@ -42,13 +71,6 @@
         "change|15 >= INTRADAY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "HKEX:644",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
     {
