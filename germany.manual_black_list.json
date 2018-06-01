@@ -1,24 +1,20 @@
 {
   "black_list": [
     {
-      "s": "FWB:VNA",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "SWB:NOEJ",
-      "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "XETR:A4Y",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "XETR:BCK",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
   ]
