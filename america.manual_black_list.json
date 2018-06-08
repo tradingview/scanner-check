@@ -1,9 +1,10 @@
 {
   "black_list": [
     {
-      "s": "NASDAQ:GEVO",
+      "s": "OTC:ALES",
       "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
