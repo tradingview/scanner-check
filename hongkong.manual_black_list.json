@@ -7,12 +7,6 @@
       ]
     },
     {
-      "s": "HKEX:1806",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "HKEX:4336",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
@@ -31,15 +25,17 @@
       ]
     },
     {
-      "s": "HKEX:6119",
+      "s": "HKEX:6098",
       "f": [
-        "change|1M >= MONTHLY_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "HKEX:8357",
+      "s": "HKEX:6119",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT"
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
       ]
     }
   ]
