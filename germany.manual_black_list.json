@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "XETR:ASL",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "XETR:BCK",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
