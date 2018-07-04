@@ -9,16 +9,17 @@
       ]
     },
     {
-      "s": "LSE:K3C",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "LSE:LLD2",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "LSE:RIOU",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
