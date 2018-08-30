@@ -1,9 +1,16 @@
 {
   "black_list": [
     {
-      "s": "BSE:SWADEIN",
+      "s": "BSE:BHASKAGR",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "BSE:YUKEN",
+      "f": [
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
   ]
