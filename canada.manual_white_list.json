@@ -3,7 +3,7 @@
     {
       "s": "TSXV:WAV.H",
       "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
+		"change|240 >= INTRADAY_CHANGE_LIMIT",
 		"change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
@@ -12,6 +12,19 @@
       "f": [
 		"change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
-    }
+    },
+    {
+      "s": "TSXV:LVWL",
+      "f": [
+		"change >= DAILY_CHANGE_LIMIT",
+		"change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "TSXV:MTLO",
+      "f": [
+		"change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    }  
   ]
 }
