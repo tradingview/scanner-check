@@ -10,12 +10,6 @@
       ]
     },
     {
-      "s": "NASDAQ:BSVN",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "NASDAQ:NVCN",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT",
@@ -26,6 +20,14 @@
       "s": "NYSE:GNRT",
       "f": [
         "No resovle symbol"
+      ]
+    },
+    {
+      "s": "OTC:FGNV",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
