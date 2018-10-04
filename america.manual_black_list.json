@@ -1,16 +1,21 @@
 {
   "black_list": [
     {
-      "s": "NYSE:GNRT",
+      "s": "NASDAQ:PTIE",
       "f": [
-        "No resovle symbol"
+        "change >= DAILY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "NYSE:RCP",
+      "s": "NASDAQ:VTVT",
       "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:GNRT",
+      "f": [
+        "No resovle symbol"
       ]
     },
     {
