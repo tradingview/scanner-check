@@ -1,7 +1,14 @@
 {
   "black_list": [
     {
-      "s": "NASDAQ:VTVT",
+      "s": "OTC:FGNV",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change >= DAILY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "OTC:NUZE",
       "f": [
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
