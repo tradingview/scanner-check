@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "LSE:ANR",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "LSE:D4OA",
       "f": [
         "change|240 >= INTRADAY_CHANGE_LIMIT"
@@ -18,6 +26,13 @@
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "LSE:SMTG",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
