@@ -1,6 +1,15 @@
 {
   "black_list": [
     {
+      "s": "BMFBOVESPA:AZEV3F",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "BMFBOVESPA:CELP6",
       "f": [
         "change|1W >= WEEKLY_CHANGE_LIMIT"
