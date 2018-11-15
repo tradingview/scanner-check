@@ -1,42 +1,15 @@
 {
   "black_list": [
     {
-      "s": "NYSE:NNA",
+      "s": "NASDAQ:CREX",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
       ]
     },
     {
       "s": "OTC:FGNV",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "OTC:OTCM",
-      "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "OTC:RSSS",
-      "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT",
-        "pre_change >= DAILY_CHANGE_LIMIT",
-        "pre_change|1W >= WEEKLY_CHANGE_LIMIT",
-        "pre_change|240 >= INTRADAY_CHANGE_LIMIT",
-        "pre_change|60 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "OTC:SOLCF",
-      "f": [
         "change|240 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
