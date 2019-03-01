@@ -532,7 +532,10 @@
 {
     "s": "NASDAQ:TMSR",
     "f": [
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
     ]
 },
  {
@@ -584,28 +587,28 @@
 	"change >= DAILY_CHANGE_LIMIT",
 	"change|1W >= WEEKLY_CHANGE_LIMIT"
      ]
-   },
-   {
-        "s": "OTC:REBL",
-        "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
-     ]
-   },
-   {
-        "s": "NASDAQ:SOLO",
-        "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
-     ]
   },
   {
-        "s": "OTC:AKOM",
-        "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
-     ]
-   },
+   "s": "OTC:REBL",
+   "f": [
+   "change|240 >= INTRADAY_CHANGE_LIMIT",
+   "change|60 >= INTRADAY_CHANGE_LIMIT"
+   ]
+ },
+ {
+   "s": "NASDAQ:SOLO",
+   "f": [
+   "change >= DAILY_CHANGE_LIMIT",
+   "change|1W >= WEEKLY_CHANGE_LIMIT"
+   ]
+ },
+ {
+   "s": "OTC:AKOM",
+   "f": [
+   "change >= DAILY_CHANGE_LIMIT",
+   "change|1W >= WEEKLY_CHANGE_LIMIT"
+   ]
+ },
    {
       "s": "NASDAQ:IMDZ",
       "f": [
@@ -615,7 +618,7 @@
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
-    {
+   {
       "s": "NASDAQ:ACHV",
       "f": [
         "change|240 >= INTRADAY_CHANGE_LIMIT",
