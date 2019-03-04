@@ -1,28 +1,48 @@
-
 {
-  "black_list": [
+    "black_list": [
     {
-      "s": "OTC:REBL",
+      "s": "NASDAQ:DDMX",
       "f": [
-      "change|240 >= INTRADAY_CHANGE_LIMIT",
-      "change|60 >= INTRADAY_CHANGE_LIMIT"
+      "pre_change|240 >= INTRADAY_CHANGE_LIMIT",
+      "pre_change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
-   {
-        "s": "NASDAQ:DDMX",
-        "f": [
-        "pre_change|240 >= INTRADAY_CHANGE_LIMIT",
-        "pre_change|60 >= INTRADAY_CHANGE_LIMIT"
-     ]
+  {
+    "s": "OTC:RZZN",
+    "f": [
+    "change >= DAILY_CHANGE_LIMIT",
+    "change|1W >= WEEKLY_CHANGE_LIMIT"
+    ]
    },
-   {
-        "s": "NASDAQ:SOLO",
-        "f": [
+ {
+   "s": "OTC:REBL",
+   "f": [
+   "change|240 >= INTRADAY_CHANGE_LIMIT",
+   "change|60 >= INTRADAY_CHANGE_LIMIT"
+   ]
+ },
+  {
+  "s": "NASDAQ:SOLO",
+  "f": [
+  "change >= DAILY_CHANGE_LIMIT",
+  "change|1W >= WEEKLY_CHANGE_LIMIT"
+  ]
+ },
+ {
+      "s": "NASDAQ:BPTH",
+      "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
-     {
+ {
+   "s": "OTC:AKOM",
+   "f": [
+   "change >= DAILY_CHANGE_LIMIT",
+   "change|1W >= WEEKLY_CHANGE_LIMIT"
+   ]
+ },
+    {
       "s": "NASDAQ:IMDZ",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
