@@ -1,9 +1,9 @@
 {
   "black_list": [
     {
-      "s": "LSE:CAB",
+      "s": "LSE:SJH",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
+        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT",
         "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
@@ -13,6 +13,17 @@
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "LSE:VNH",
+      "f": [
+        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT",
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
