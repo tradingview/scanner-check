@@ -1,9 +1,16 @@
 {
   "black_list": [
     {
-      "s": "SWB:PEA",
+      "s": "FWB:LIK",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "XETR:LIK",
+      "f": [
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
