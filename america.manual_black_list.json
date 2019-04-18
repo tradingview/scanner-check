@@ -1,3 +1,27 @@
 {
-  "black_list": []
+  "black_list": [
+    {
+      "s": "NASDAQ:GNLN",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:MNRL",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:PINS",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    }
+  ]
 }
