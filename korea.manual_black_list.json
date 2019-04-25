@@ -1,9 +1,15 @@
 {
   "black_list": [
     {
-      "s": "KRX:004590",
+      "s": "KRX:008830",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "KRX:010660",
+      "f": [
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
