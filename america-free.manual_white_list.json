@@ -250,6 +250,14 @@
       "f": [
         "change >= DAILY_CHANGE_LIMIT"
       ]
+    },
+    {
+      "s": "OTC:AIXN",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
     }
   ]
 }
