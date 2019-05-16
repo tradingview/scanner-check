@@ -90,8 +90,7 @@
       "s": "NASDAQ:ATOS",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
     {
@@ -110,19 +109,11 @@
       ]
     },
     {
-      "s": "NASDAQ:HUNT",
+      "s": "NASDAQ:TIGR",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
+        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "NASDAQ:HUNTU",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
@@ -172,23 +163,6 @@
       "s": "NASDAQ:ATAI",
       "f": [
         "change|1W >= WEEKLY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "NASDAQ:FTFT",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "NASDAQ:AMCN",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
@@ -257,7 +231,14 @@
         "Perf.3M >= THREE_MONTH_CHANGE_LIMIT",
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "OTC:POYN",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT"
       ]
     }
   ]
