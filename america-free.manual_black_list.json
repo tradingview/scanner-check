@@ -1,18 +1,16 @@
 {
   "black_list": [
     {
-      "s": "NASDAQ:BPYPP",
+      "s": "NASDAQ:ADYX",
       "f": [
-        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT"
+        "pre_change|240 >= INTRADAY_CHANGE_LIMIT",
+        "pre_change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "NASDAQ:VLRX",
+      "s": "NASDAQ:BPYPP",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|1M >= MONTHLY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
+        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT"
       ]
     }
   ]
