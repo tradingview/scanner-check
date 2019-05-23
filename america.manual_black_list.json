@@ -1,16 +1,23 @@
 {
   "black_list": [
     {
-      "s": "NASDAQ:BPYPP",
+      "s": "AMEX:GLIF",
       "f": [
-        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT"
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "NASDAQ:OBLN",
+      "s": "AMEX:USHG",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NASDAQ:BPYPP",
+      "f": [
+        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT"
       ]
     }
   ]
