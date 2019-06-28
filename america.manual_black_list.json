@@ -1,6 +1,20 @@
 {
   "black_list": [
     {
+      "s": "AMEX:DRIP",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "AMEX:DRV",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "AMEX:FAZ",
       "f": [
         "pre_change >= DAILY_CHANGE_LIMIT",
@@ -37,6 +51,13 @@
       ]
     },
     {
+      "s": "AMEX:MIDZ",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "AMEX:SOXS",
       "f": [
         "pre_change >= DAILY_CHANGE_LIMIT",
@@ -69,6 +90,19 @@
         "change|1W >= WEEKLY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NASDAQ:REAL",
+      "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "NYSE:CGA",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     },
     {
