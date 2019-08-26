@@ -1,9 +1,10 @@
 {
   "black_list": [
     {
-      "s": "HKEX:8581",
+      "s": "HKEX:2947",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
