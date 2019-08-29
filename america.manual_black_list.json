@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "NASDAQ:MOSY",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "OTC:JMDA",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
