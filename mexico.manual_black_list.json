@@ -1,10 +1,17 @@
 {
   "black_list": [
     {
-      "s": "BMV:BSX",
+      "s": "BMV:APD",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "BMV:GPN",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
