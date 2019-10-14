@@ -1,9 +1,12 @@
 {
   "black_list": [
     {
-      "s": "FWB:PU11",
+      "s": "XETR:TII",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
