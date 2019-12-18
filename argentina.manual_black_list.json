@@ -1,10 +1,18 @@
 {
   "black_list": [
     {
-      "s": "BCBA:CL",
+      "s": "BCBA:DXOM2",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "BCBA:MDT",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
