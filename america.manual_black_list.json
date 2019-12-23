@@ -1,10 +1,9 @@
 {
   "black_list": [
     {
-      "s": "NYSE:SFTW",
+      "s": "AMEX:UGAZ",
       "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT",
-        "change|60 >= INTRADAY_CHANGE_LIMIT"
+        "premarket_change >= DAILY_CHANGE_LIMIT"
       ]
     },
     {
