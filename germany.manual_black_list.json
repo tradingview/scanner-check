@@ -1,22 +1,17 @@
 {
   "black_list": [
     {
-      "s": "XETR:INR",
-      "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "XETR:NEF",
-      "f": [
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
-      "s": "XETR:PMTA",
+      "s": "XETR:3LN",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
         "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "XETR:PER",
+      "f": [
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
