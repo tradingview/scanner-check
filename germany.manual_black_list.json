@@ -1,9 +1,27 @@
 {
   "black_list": [
     {
-      "s": "FWB:ISHA",
+      "s": "XETR:FHL",
       "f": [
-        "change|1W >= WEEKLY_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "XETR:HNM",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "XETR:HRS",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
     }
   ]
