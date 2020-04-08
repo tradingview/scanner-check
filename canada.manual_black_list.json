@@ -1,6 +1,15 @@
 {
   "black_list": [
     {
+      "s": "NEO:ARB",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "NEO:HQD.U",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
