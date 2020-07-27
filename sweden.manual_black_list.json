@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "OMXSTO:GCOR",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "OMXSTO:WESC",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
