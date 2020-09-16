@@ -16,13 +16,6 @@
       ]
     },
     {
-      "s": "BCBA:MTBA",
-      "f": [
-        "change >= DAILY_CHANGE_LIMIT",
-        "change|240 >= INTRADAY_CHANGE_LIMIT"
-      ]
-    },
-    {
       "s": "BCBA:MVIA",
       "f": [
         "change >= DAILY_CHANGE_LIMIT",
@@ -41,6 +34,15 @@
     {
       "s": "BCBA:PCAR",
       "f": [
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "BCBA:SYY",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
