@@ -1,11 +1,12 @@
 {
   "black_list": [
     {
-      "s": "OTC:BNIGF",
+      "s": "NASDAQ:CAPA",
       "f": [
-        "change >= DAILY_CHANGE_LIMIT"
+        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
       ]
- },
+    },
     {
       "s": "NASDAQ:PRTC",
       "f": [
