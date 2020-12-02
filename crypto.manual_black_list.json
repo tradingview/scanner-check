@@ -1,8 +1,19 @@
 {
   "black_list": [
     {
-      "s": "POLONIEX:ZLOTUSDT",
+      "s": "POLONIEX:WBTCBTC",
       "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "POLONIEX:WBTCUSD",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT",
         "change|240 >= INTRADAY_CHANGE_LIMIT",
         "change|60 >= INTRADAY_CHANGE_LIMIT"
       ]
