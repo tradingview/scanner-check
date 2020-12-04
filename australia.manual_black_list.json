@@ -1,10 +1,15 @@
 {
   "black_list": [
     {
-      "s": "ASX:LBY",
+      "s": "ASX:CRW",
       "f": [
-        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT",
         "change|1M >= MONTHLY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "ASX:HUM",
+      "f": [
         "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
