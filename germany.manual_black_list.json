@@ -1,15 +1,23 @@
 {
   "black_list": [
     {
-      "s": "FWB:4XP",
+      "s": "FWB:5Q5",
       "f": [
         "Perf.3M >= THREE_MONTH_CHANGE_LIMIT"
       ]
     },
     {
-      "s": "FWB:5OJ",
+      "s": "FWB:ECX",
       "f": [
-        "Perf.3M >= THREE_MONTH_CHANGE_LIMIT"
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "XETR:ECX",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
       ]
     }
   ]
