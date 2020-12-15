@@ -1,6 +1,14 @@
 {
   "black_list": [
     {
+      "s": "SZSE:003020",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "premarket_change >= DAILY_CHANGE_LIMIT"
+      ]
+    },
+    {
       "s": "SZSE:003021",
       "f": [
         "change|1M >= MONTHLY_CHANGE_LIMIT"
