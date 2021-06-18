@@ -259,6 +259,22 @@
       "f": [
         "premarket_change >= DAILY_CHANGE_LIMIT"
       ]
+    },
+    {
+      "s": "OTC:IESFY",
+      "f": [
+        "change >= DAILY_CHANGE_LIMIT",
+        "change|1W >= WEEKLY_CHANGE_LIMIT",
+        "change|240 >= INTRADAY_CHANGE_LIMIT",
+        "change|60 >= INTRADAY_CHANGE_LIMIT",
+        "change|1M >= MONTHLY_CHANGE_LIMIT"
+      ]
+    },
+    {
+      "s": "OTC:ESVNF",
+      "f": [
+        "change|1W >= WEEKLY_CHANGE_LIMIT"
+      ]
     }
   ]
 }
