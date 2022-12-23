@@ -16,4 +16,4 @@ jobs:
         env:
           TARGET_REPO_URL: 'git@github.com:tradingview/scanner-check.git'
         run: | 
-          git remote add mirror $TARGET_REPO_URL && git push --progress --tags --force --prune mirror 'refs/remotes/origin/*:refs/heads/*'
+          git remote add mirror $TARGET_REPO_URL && git push --progress --prune --mirror mirror
