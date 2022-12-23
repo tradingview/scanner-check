@@ -1,6 +1,8 @@
 name: Mirroring repo
 on:
-  push
+  push:
+    branches:
+      - test1_wdc2
 jobs:
   mirroring:
     if: github.repository == 'multicharts/scanner-check'
@@ -8,7 +10,9 @@ jobs:
     steps:
       - uses : actions/checkout@v3
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          lfs: true
+          ref:  ${{ github.event.pull_request.head.sha }}
       - name: Preparing to mirror
         run: | 
           mkdir -p ~/.ssh && echo "${{ secrets.MIRROR_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
