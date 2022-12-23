@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses : actions/checkout@v3
         with:
-          fetch-depth: 20
+          fetch-depth: 200
       - name: Preparing to mirror
         run: | 
           mkdir -p ~/.ssh && echo "${{ secrets.MIRROR_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
