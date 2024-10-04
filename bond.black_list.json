@@ -357,7 +357,6 @@
       {
         "s": "BER:PAGA",
         "f": [
-          "current_yield",
           "yield_to_maturity"
         ],
         "partial_ban": true
@@ -118222,7 +118221,8 @@
       {
         "s": "GETTEX:B11C",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -120202,7 +120202,8 @@
       {
         "s": "GETTEX:ES0000101768",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -121134,7 +121135,8 @@
       {
         "s": "GETTEX:FR0014002NR7",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -123833,6 +123835,7 @@
       {
         "s": "GETTEX:XS1115800655",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -123840,7 +123843,8 @@
       {
         "s": "GETTEX:XS1116263325",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -127792,6 +127796,14 @@
         "partial_ban": false
       },
       {
+        "s": "GETTEX:XS2823913921",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "GETTEX:YEBB",
         "f": [
           "issue_status matured or redeemed",
@@ -128037,7 +128049,8 @@
       {
         "s": "HAM:B11C",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -128085,7 +128098,8 @@
       {
         "s": "HAM:C6WA",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -128114,7 +128128,8 @@
       {
         "s": "HAM:ES010176",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -128191,7 +128206,8 @@
       {
         "s": "HAM:FR14002NR",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -128230,7 +128246,8 @@
       {
         "s": "HAM:KPNM",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -128299,7 +128316,8 @@
       {
         "s": "HAM:XS111626332",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -132698,7 +132716,8 @@
       {
         "s": "LSE:FD26",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -132799,62 +132818,6 @@
         "partial_ban": false
       },
       {
-        "s": "LSE:PT56",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT58",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT60",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT63",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT65",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT68",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT70",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:PT71",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "LSE:QB31",
         "f": [
           "empty nominal_value"
@@ -132900,13 +132863,6 @@
       },
       {
         "s": "LSE:SR43",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:ST96",
         "f": [
           "empty nominal_value"
         ],
@@ -133895,13 +133851,6 @@
         "partial_ban": false
       },
       {
-        "s": "LUXSE:USG315APAK49",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "LUXSE:USG3812BAB65",
         "f": [
           "empty nominal_value"
@@ -133927,13 +133876,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LUXSE:USL7909CAE77",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
