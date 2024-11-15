@@ -10732,7 +10732,7 @@
       {
         "s": "FINRA:BNP5677230",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -11554,7 +11554,8 @@
       {
         "s": "FINRA:BNPQF5677231",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status null AND mat_date past",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -95486,7 +95487,8 @@
       {
         "s": "FINRA:JPM5673214",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status null AND mat_date past",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
