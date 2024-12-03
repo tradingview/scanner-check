@@ -129434,7 +129434,8 @@
       {
         "s": "FWB:ES00126A",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -132330,6 +132331,14 @@
           "current_yield"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "FWB:USY708CHAB6",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
       },
       {
         "s": "FWB:USY714AGAB8",
