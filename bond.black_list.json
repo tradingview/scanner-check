@@ -3284,6 +3284,13 @@
         "partial_ban": false
       },
       {
+        "s": "BCBA:PNWCD",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "BCBA:PNWCO",
         "f": [
           "close_pct over 500",
@@ -10898,6 +10905,13 @@
       },
       {
         "s": "EUROTLX:IT0005467037",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "EUROTLX:IT0005547648",
         "f": [
           "yield_to_call"
         ],
@@ -140163,7 +140177,8 @@
         "s": "FWB:A254PV",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -141050,13 +141065,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "FWB:DFK0MV",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "FWB:DFK0NC",
@@ -142455,6 +142463,7 @@
       {
         "s": "FWB:TLSB",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -143565,13 +143574,6 @@
       },
       {
         "s": "FWB:USU16309AJ2",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "FWB:USU16450BB0",
         "f": [
           "yield_to_call"
         ],
@@ -170026,6 +170028,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "LUXSE:XS1966992361",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "LUXSE:XS1968566411",
