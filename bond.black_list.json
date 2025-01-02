@@ -2301,13 +2301,6 @@
         "partial_ban": false
       },
       {
-        "s": "BCBA:IRCJD",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "BCBA:IRCJO",
         "f": [
           "close_pct over 500"
@@ -9880,7 +9873,7 @@
       {
         "s": "EURONEXT:ALYCO",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "old coupon_currency",
           "outstanding_amount less 1000"
         ],
@@ -106654,6 +106647,20 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:GS5717439",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:GS5717440",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:GS5718721",
         "f": [
           "issue_status matured or redeemed",
@@ -112636,6 +112643,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:JPM5830316",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:JPM5832266",
         "f": [
           "issue_status matured or redeemed",
@@ -112719,6 +112733,13 @@
         "s": "FINRA:JPM5862339",
         "f": [
           "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:JPM5890370",
+        "f": [
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -139923,8 +139944,7 @@
       {
         "s": "FWB:R3AA",
         "f": [
-          "yield_to_call",
-          "yield_to_maturity"
+          "yield_to_call"
         ],
         "partial_ban": true
       },
