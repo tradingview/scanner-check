@@ -10009,13 +10009,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:ACAQI",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "EURONEXT:AGDER06_PRO",
         "f": [
           "empty nominal_value"
@@ -10350,7 +10343,8 @@
         "s": "EURONEXT:EFOR01_PRO",
         "f": [
           "close_pct over 500",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -10663,7 +10657,7 @@
       {
         "s": "EURONEXT:VEOOC",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -11747,6 +11741,7 @@
         "s": "FINRA:AGIL5025231",
         "f": [
           "issue_status null AND mat_date past",
+          "outstanding_amount less 1000",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -127471,6 +127466,22 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:SFAI5959357",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:SFAI5959362",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:SFI4923198",
         "f": [
           "issue_status matured or redeemed",
@@ -128267,7 +128278,7 @@
       {
         "s": "FINRA:SONH5081977",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -139357,9 +139368,8 @@
       {
         "s": "FWB:FR1344414",
         "f": [
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -143305,6 +143315,7 @@
         "s": "FWB:XS219436149",
         "f": [
           "issue_status null AND mat_date past",
+          "outstanding_amount less 1000",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -155006,7 +155017,6 @@
       {
         "s": "GETTEX:A3LYYX",
         "f": [
-          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
