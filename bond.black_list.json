@@ -101922,7 +101922,8 @@
       {
         "s": "FINRA:GLPM4940518",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status null AND mat_date past",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -108490,6 +108491,13 @@
         "s": "FINRA:JBARF4552383",
         "f": [
           "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:JBFCF4957194",
+        "f": [
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -119175,7 +119183,8 @@
       {
         "s": "FINRA:PHOA4937621",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status null AND mat_date past",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -119206,7 +119215,8 @@
       {
         "s": "FINRA:PKTB4961626",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status null AND mat_date past",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -167199,7 +167209,8 @@
       {
         "s": "LUXSE:XS1809932665",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status null AND mat_date past",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -168903,6 +168914,7 @@
         "f": [
           "current_yield",
           "issue_status null AND mat_date past",
+          "outstanding_amount less 1000",
           "yield_to_maturity"
         ],
         "partial_ban": false
