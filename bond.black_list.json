@@ -10143,7 +10143,8 @@
       {
         "s": "EURONEXT:SGSDG",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -16570,6 +16571,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:BAC5628460",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:BAC5637201",
         "f": [
           "issue_status matured or redeemed",
@@ -18711,6 +18719,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:BCS4943408",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:BCS4945027",
         "f": [
           "issue_status matured or redeemed",
@@ -18909,7 +18924,8 @@
       {
         "s": "FINRA:BCS5530116",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -19304,6 +19320,7 @@
       {
         "s": "FINRA:BCS5797030",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -23306,6 +23323,13 @@
         "partial_ban": true
       },
       {
+        "s": "FINRA:BX5217162",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "FINRA:BX5351513",
         "f": [
           "issue_status matured or redeemed",
@@ -25059,6 +25083,13 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:C5449365",
+        "f": [
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -27920,6 +27951,7 @@
       {
         "s": "FINRA:COMM4796565",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -27927,6 +27959,7 @@
       {
         "s": "FINRA:COMM4796566",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -32629,13 +32662,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "FINRA:ETR4136086",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "FINRA:ETR4185920",
@@ -42938,6 +42964,13 @@
       },
       {
         "s": "FINRA:FFCD5224781",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FINRA:FFCD5224782",
         "f": [
           "yield_to_call"
         ],
@@ -100324,13 +100357,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:FNMA5509437",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FINRA:FNMA5509438",
         "f": [
           "yield_to_call"
@@ -113556,7 +113582,7 @@
       {
         "s": "FINRA:KEP5039373",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -118246,7 +118272,6 @@
       {
         "s": "FINRA:NEYB4900347",
         "f": [
-          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -119311,6 +119336,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "FINRA:NXST4848656",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "FINRA:NXST5046452",
@@ -124419,13 +124451,6 @@
       },
       {
         "s": "FINRA:PSEC5355020",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "FINRA:PSEC5364448",
         "f": [
           "yield_to_call"
         ],
@@ -135012,7 +135037,6 @@
       {
         "s": "FINRA:UNIT5807473",
         "f": [
-          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -138248,7 +138272,6 @@
       {
         "s": "FINRA:WIN5961286",
         "f": [
-          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -139765,13 +139788,6 @@
         "partial_ban": false
       },
       {
-        "s": "FWB:BE277758",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FWB:BE632574685",
         "f": [
           "yield_to_maturity"
@@ -139938,6 +139954,20 @@
       },
       {
         "s": "FWB:DDA0Q8",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FWB:DDA0VE",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FWB:DDA0VX",
         "f": [
           "yield_to_call"
         ],
@@ -141045,6 +141075,20 @@
         "partial_ban": true
       },
       {
+        "s": "FWB:NLB2L6",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FWB:NLB2NJ",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "FWB:NLB3D2",
         "f": [
           "yield_to_call"
@@ -141127,6 +141171,13 @@
         "s": "FWB:NO1271352",
         "f": [
           "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FWB:NO1309568",
+        "f": [
+          "yield_to_put"
         ],
         "partial_ban": true
       },
@@ -141634,6 +141685,14 @@
           "yield_to_call"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "FWB:US45258DAA3",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
       },
       {
         "s": "FWB:US49446RAU3",
@@ -152909,7 +152968,8 @@
       {
         "s": "GETTEX:A2RUVH",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -161441,6 +161501,27 @@
         "partial_ban": true
       },
       {
+        "s": "HAN:NLB2L6",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "HAN:NLB2NJ",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "HAN:NLB2NW",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "HAN:NLB2VY",
         "f": [
           "yield_to_call"
@@ -161477,6 +161558,13 @@
       },
       {
         "s": "HAN:NLB3WL",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "HAN:NLB85S",
         "f": [
           "yield_to_call"
         ],
@@ -171841,13 +171929,6 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "LUXSE:XS2979756256",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "LUXSE:XS2984062765",
