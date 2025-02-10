@@ -6337,6 +6337,13 @@
         "partial_ban": false
       },
       {
+        "s": "BCBA:YMCMD",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "BCBA:YMCMO",
         "f": [
           "close_pct over 500",
@@ -20625,6 +20632,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:BMO5743658",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:BMO5785089",
         "f": [
           "issue_status matured or redeemed",
@@ -26190,6 +26204,13 @@
         "s": "FINRA:CGMHI5738594",
         "f": [
           "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:CGMHI5741422",
+        "f": [
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -33372,7 +33393,8 @@
       {
         "s": "FINRA:FFCD4208310",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -64311,7 +64333,8 @@
       {
         "s": "FINRA:FHLN5534679",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -71360,7 +71383,8 @@
       {
         "s": "FINRA:FHLN5744897",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -86847,7 +86871,8 @@
       {
         "s": "FINRA:FMCC5533955",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -115972,7 +115997,8 @@
       {
         "s": "FINRA:MTB4208932",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -118176,7 +118202,8 @@
       {
         "s": "FINRA:PCAR4945082",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -131461,13 +131488,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:TOSC4261508",
-        "f": [
-          "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:TOSC4261570",
         "f": [
           "outstanding_amount less 1000"
@@ -138904,6 +138924,13 @@
       },
       {
         "s": "FWB:NO1096541",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FWB:NO1108859",
         "f": [
           "yield_to_call"
         ],
@@ -147410,7 +147437,8 @@
       {
         "s": "GETTEX:A1ZVJQ",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -157099,7 +157127,8 @@
       {
         "s": "GETTEX:R3AA",
         "f": [
-          "yield_to_call"
+          "yield_to_call",
+          "yield_to_maturity"
         ],
         "partial_ban": true
       },
@@ -165919,8 +165948,8 @@
         "s": "LUXSE:XS0885718352",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -165984,8 +166013,8 @@
         "s": "LUXSE:XS1177459531",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
