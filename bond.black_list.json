@@ -43911,13 +43911,6 @@
         "partial_ban": true
       },
       {
-        "s": "FINRA:FFCD5146254",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FINRA:FFCD5147427",
         "f": [
           "issue_status matured or redeemed",
@@ -44022,13 +44015,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "FINRA:FFCD5156210",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "FINRA:FFCD5158879",
@@ -142890,7 +142876,8 @@
       {
         "s": "FWB:A19W2L",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -143961,7 +143948,7 @@
       {
         "s": "FWB:GBBKLY635",
         "f": [
-          "issue_status matured or redeemed",
+          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
