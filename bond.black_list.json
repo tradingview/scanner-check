@@ -24,7 +24,8 @@
       {
         "s": "BAHRAIN:TB3M050325",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -11122,7 +11123,6 @@
       {
         "s": "EURONEXT:LBSB29_PRO",
         "f": [
-          "current_yield",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
@@ -11264,7 +11264,6 @@
       {
         "s": "EURONEXT:RISB10_PRO",
         "f": [
-          "current_yield",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
@@ -11403,13 +11402,6 @@
           "close_pct over 500"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SOR73_PRO",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "EURONEXT:SPOBK21_PRO",
@@ -18127,6 +18119,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:BAC5763008",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:BAC5765411",
         "f": [
           "issue_status matured or redeemed",
@@ -22545,7 +22544,8 @@
       {
         "s": "FINRA:BNP5757371",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -29137,13 +29137,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "FINRA:CMS6009355",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "FINRA:CMUS5449417",
@@ -63653,13 +63646,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:FHLN5214082",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FINRA:FHLN5214118",
         "f": [
           "issue_status matured or redeemed",
@@ -87883,13 +87869,6 @@
         "partial_ban": true
       },
       {
-        "s": "FINRA:FMCC5392771",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FINRA:FMCC5394486",
         "f": [
           "yield_to_call"
@@ -108989,6 +108968,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:GS5468970",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:GS5478472",
         "f": [
           "issue_status matured or redeemed",
@@ -110371,7 +110357,22 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:GS5757189",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:GS5761373",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:GS5761407",
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
@@ -128775,7 +128776,8 @@
       {
         "s": "FINRA:RBC5753850",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -145060,13 +145062,6 @@
       },
       {
         "s": "FWB:URLD",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "FWB:US125896BY5",
         "f": [
           "yield_to_call"
         ],
@@ -176960,7 +176955,6 @@
         "f": [
           "current_yield",
           "outstanding_amount less 1000",
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
