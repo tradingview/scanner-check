@@ -5031,7 +5031,7 @@
       {
         "s": "BCBA:SG1AP",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -5070,7 +5070,7 @@
       {
         "s": "BCBA:SGAPD",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -8630,32 +8630,11 @@
         "partial_ban": true
       },
       {
-        "s": "BSE:940NHFP26",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "BSE:940NHFPL26",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "BSE:955IFSL25",
         "f": [
           "yield_to_maturity"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "BSE:955NHFPL28",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "BSE:955SCL25",
@@ -10275,7 +10254,8 @@
         "s": "EURONEXT:ACARA",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -142020,7 +142000,8 @@
       {
         "s": "FWB:US20826FAU0",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -142049,7 +142030,8 @@
       {
         "s": "FWB:US24422EWB1",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -142081,6 +142063,7 @@
       {
         "s": "FWB:US30981AK0",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -142173,6 +142156,14 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "FWB:US450056AA4",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
       },
       {
         "s": "FWB:US45174HBC0",
@@ -142330,6 +142321,14 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "FWB:US70202LAC6",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
       },
       {
         "s": "FWB:US71656MAF6",
@@ -143617,7 +143616,8 @@
       {
         "s": "FWB:XS157544462",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -156920,6 +156920,7 @@
       {
         "s": "GETTEX:A3MQYU",
         "f": [
+          "current_yield",
           "yield_to_call",
           "yield_to_maturity",
           "yield_to_put"
@@ -158985,6 +158986,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "GETTEX:DLWB",
+        "f": [
+          "current_yield"
+        ],
+        "partial_ban": true
       },
       {
         "s": "GETTEX:DMCE",
@@ -167200,7 +167208,8 @@
       {
         "s": "LSE:BU08",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -170748,8 +170757,8 @@
       {
         "s": "LUXSE:XS1575444622",
         "f": [
-          "issue_status null AND mat_date past",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -172225,8 +172234,8 @@
         "s": "LUXSE:XS2384256629",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
