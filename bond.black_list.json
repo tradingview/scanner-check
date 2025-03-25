@@ -8909,13 +8909,6 @@
         "partial_ban": true
       },
       {
-        "s": "DUS:NO1302401",
-        "f": [
-          "yield_to_put"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "DUS:NR9U",
         "f": [
           "empty nominal_value"
@@ -10640,7 +10633,7 @@
         "s": "EURONEXT:STLAD",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -10880,7 +10873,7 @@
       {
         "s": "EUROTLX:FR0013323326",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -22158,7 +22151,8 @@
       {
         "s": "FINRA:BNPQF5381540",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -131038,7 +131032,7 @@
       {
         "s": "FINRA:SSBO4362308",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -142633,13 +142627,6 @@
         "partial_ban": true
       },
       {
-        "s": "FWB:NO1302401",
-        "f": [
-          "yield_to_put"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FWB:NO1309568",
         "f": [
           "yield_to_put"
@@ -148807,7 +148794,7 @@
       {
         "s": "GETTEX:A19EWG",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -150049,7 +150036,7 @@
       {
         "s": "GETTEX:A19X3T",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -150057,7 +150044,7 @@
       {
         "s": "GETTEX:A19X3U",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -150193,7 +150180,7 @@
       {
         "s": "GETTEX:A19XX2",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -156108,7 +156095,7 @@
       {
         "s": "GETTEX:A2SAQK",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -170135,8 +170122,8 @@
         "s": "LUXSE:FR0013495447",
         "f": [
           "current_yield",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -172053,18 +172040,16 @@
       {
         "s": "LUXSE:XS1205446757",
         "f": [
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "LUXSE:XS1206451533",
         "f": [
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -173312,9 +173297,8 @@
         "s": "LUXSE:XS2096037564",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -173519,8 +173503,8 @@
       {
         "s": "LUXSE:XS2234515943",
         "f": [
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -174343,9 +174327,8 @@
         "s": "LUXSE:XS2690067066",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -176673,7 +176656,7 @@
       {
         "s": "NASDAQDUBAI:DUBAE2325USD",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -176972,6 +176955,13 @@
       },
       {
         "s": "TRADEGATE:A2GSB8",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "TRADEGATE:A3510K",
         "f": [
           "yield_to_call"
         ],
