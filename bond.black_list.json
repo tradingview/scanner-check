@@ -10541,13 +10541,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:ACAQI",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "EURONEXT:ADPBX",
         "f": [
           "current_yield",
@@ -11615,6 +11608,13 @@
           "old fundamental_currency_code"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "EUROTLX:XS1365096087",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "EUROTLX:XS1577952440",
@@ -150529,7 +150529,7 @@
       {
         "s": "GETTEX:A188GP",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -155874,7 +155874,7 @@
       {
         "s": "GETTEX:A28VK0",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -174207,6 +174207,7 @@
       {
         "s": "LUXSE:FR0013335841",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -174286,9 +174287,8 @@
       {
         "s": "LUXSE:FR0013505559",
         "f": [
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -177704,9 +177704,8 @@
       {
         "s": "LUXSE:XS2150024540",
         "f": [
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
