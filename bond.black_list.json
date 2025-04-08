@@ -9431,13 +9431,6 @@
         "partial_ban": true
       },
       {
-        "s": "DUS:NO1248759",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "DUS:NO1253096",
         "f": [
           "yield_to_call"
@@ -11111,7 +11104,7 @@
       {
         "s": "EURONEXT:CAHAW",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -11135,7 +11128,7 @@
       {
         "s": "EURONEXT:ELISD",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -11282,8 +11275,8 @@
         "s": "EURONEXT:GRSB12_PRO",
         "f": [
           "current_yield",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -178827,13 +178820,6 @@
       },
       {
         "s": "MUN:NO1112949",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "MUN:NO1248759",
         "f": [
           "yield_to_call"
         ],
