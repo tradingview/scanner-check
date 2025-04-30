@@ -146468,13 +146468,6 @@
         "partial_ban": true
       },
       {
-        "s": "FWB:NO1113015",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FWB:NO1117980",
         "f": [
           "yield_to_call"
@@ -147075,7 +147068,8 @@
       {
         "s": "FWB:US413875AR6",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -148047,13 +148041,6 @@
       },
       {
         "s": "FWB:USU16309AJ2",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "FWB:USU16450BB0",
         "f": [
           "yield_to_call"
         ],
@@ -161413,6 +161400,13 @@
       },
       {
         "s": "GETTEX:A351UB",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "GETTEX:A351VB",
         "f": [
           "yield_to_call"
         ],
@@ -175948,8 +175942,8 @@
         "s": "LUXSE:FR0013416146",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -176712,6 +176706,7 @@
       {
         "s": "LUXSE:US95000U2Y86",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -185173,7 +185168,6 @@
       {
         "s": "VIE:XS2545418183",
         "f": [
-          "empty nominal_value",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
