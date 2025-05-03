@@ -7666,8 +7666,7 @@
       {
         "s": "BER:US25816DE6",
         "f": [
-          "outstanding_amount less 1000",
-          "yield_to_call"
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -167362,7 +167361,8 @@
       {
         "s": "GETTEX:CRIL",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
