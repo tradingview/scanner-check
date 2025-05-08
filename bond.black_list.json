@@ -10592,7 +10592,8 @@
       {
         "s": "EURONEXT:AUB6L",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -10628,25 +10629,11 @@
         "partial_ban": false
       },
       {
-        "s": "EURONEXT:BE0002648294",
-        "f": [
-          "yield_to_maturity"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "EURONEXT:BE0002662436",
         "f": [
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:BE0312800726",
-        "f": [
-          "yield_to_maturity"
-        ],
-        "partial_ban": true
       },
       {
         "s": "EURONEXT:BE6361965260",
@@ -10915,6 +10902,20 @@
         "partial_ban": true
       },
       {
+        "s": "EURONEXT:FR0000571168",
+        "f": [
+          "yield_to_maturity"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "EURONEXT:FR0000578544",
+        "f": [
+          "yield_to_maturity"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "EURONEXT:FR0000584377",
         "f": [
           "old coupon_currency",
@@ -10969,6 +10970,13 @@
         "partial_ban": false
       },
       {
+        "s": "EURONEXT:HELK23_PRO_ESG",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "EURONEXT:KARBE01_PRO",
         "f": [
           "yield_to_call"
@@ -10986,15 +10994,15 @@
         "s": "EURONEXT:KERAC",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "EURONEXT:KFS66_PRO_ESG",
         "f": [
-          "current_yield",
-          "yield_to_maturity"
+          "current_yield"
         ],
         "partial_ban": true
       },
@@ -11064,8 +11072,7 @@
       {
         "s": "EURONEXT:NOKR11_PRO",
         "f": [
-          "current_yield",
-          "yield_to_maturity"
+          "current_yield"
         ],
         "partial_ban": true
       },
@@ -11079,8 +11086,7 @@
       {
         "s": "EURONEXT:OBOBA13_PRO",
         "f": [
-          "current_yield",
-          "yield_to_maturity"
+          "current_yield"
         ],
         "partial_ban": true
       },
@@ -11107,42 +11113,7 @@
         "partial_ban": false
       },
       {
-        "s": "EURONEXT:SFCAM",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SFCAO",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SFCAP",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SFCAS",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SFCAT",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SFCAV",
+        "s": "EURONEXT:SADG86_PRO",
         "f": [
           "yield_to_call"
         ],
@@ -11185,13 +11156,6 @@
         "s": "EURONEXT:SGGY",
         "f": [
           "yield_to_maturity"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SGSEA",
-        "f": [
-          "yield_to_call"
         ],
         "partial_ban": true
       },
@@ -138937,6 +138901,13 @@
       },
       {
         "s": "FINRA:TMUS5109956",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "FINRA:TMUS5150679",
         "f": [
           "yield_to_call"
         ],
