@@ -8928,6 +8928,13 @@
         "partial_ban": false
       },
       {
+        "s": "BSE:TRCL300425",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "CSE:TRUL.NT.U",
         "f": [
           "yield_to_call"
@@ -10885,7 +10892,8 @@
       {
         "s": "EURONEXT:BE0002648294",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -11366,7 +11374,8 @@
         "s": "EURONEXT:OBOBA13_PRO",
         "f": [
           "current_yield",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -11945,6 +11954,7 @@
       {
         "s": "EUROTLX:XS2781204149",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -173801,6 +173811,7 @@
       {
         "s": "LSE:42YA",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -176405,6 +176416,7 @@
       {
         "s": "LSE:BV36",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
