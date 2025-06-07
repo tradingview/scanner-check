@@ -146660,13 +146660,6 @@
         "partial_ban": true
       },
       {
-        "s": "FWB:HLB23J",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FWB:HLB23K",
         "f": [
           "yield_to_call"
@@ -168035,7 +168028,8 @@
       {
         "s": "GETTEX:BP459N",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -182954,7 +182948,6 @@
         "f": [
           "current_yield",
           "outstanding_amount less 1000",
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -182971,7 +182964,6 @@
         "s": "LUXSE:XS2836713052",
         "f": [
           "outstanding_amount less 1000",
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
