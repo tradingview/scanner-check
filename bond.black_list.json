@@ -1276,7 +1276,8 @@
       {
         "s": "BCBA:CP31O",
         "f": [
-          "close_pct over 500"
+          "close_pct over 500",
+          "yield_to_maturity"
         ],
         "partial_ban": false
       },
@@ -1637,13 +1638,6 @@
         "partial_ban": false
       },
       {
-        "s": "BCBA:DNC3D",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "BCBA:DNC3O",
         "f": [
           "close_pct over 500",
@@ -1822,7 +1816,6 @@
         "s": "BCBA:FOS2X",
         "f": [
           "close_pct over 500",
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -2907,8 +2900,7 @@
       {
         "s": "BCBA:MCC1O",
         "f": [
-          "close_pct over 500",
-          "yield_to_call"
+          "close_pct over 500"
         ],
         "partial_ban": false
       },
@@ -3012,6 +3004,13 @@
           "close_pct over 500"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "BCBA:MGCHD",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "BCBA:MGCHO",
@@ -3134,13 +3133,6 @@
       },
       {
         "s": "BCBA:MR42O",
-        "f": [
-          "yield_to_maturity"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "BCBA:MRCAD",
         "f": [
           "yield_to_maturity"
         ],
@@ -9852,13 +9844,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:ACARO",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "EURONEXT:AGDER05_PRO",
         "f": [
           "issue_status matured or redeemed",
@@ -11017,13 +11002,6 @@
         "partial_ban": false
       },
       {
-        "s": "EUROTLX:XS1365096087",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "EUROTLX:XS2177363665",
         "f": [
           "yield_to_call"
@@ -11107,13 +11085,6 @@
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "EUROTLX:XS2746270003",
-        "f": [
-          "yield_to_put"
-        ],
-        "partial_ban": true
       },
       {
         "s": "EUROTLX:XS2798174434",
@@ -32670,7 +32641,8 @@
       {
         "s": "FINRA:DVA5140420",
         "f": [
-          "issue_status matured or redeemed"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
