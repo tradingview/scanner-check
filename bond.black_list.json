@@ -2632,7 +2632,6 @@
         "s": "BCBA:IRCLO",
         "f": [
           "close_pct over 500",
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -4330,13 +4329,6 @@
           "close_pct over 500"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "BCBA:RCCMD",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "BCBA:RCCMO",
@@ -8889,13 +8881,6 @@
         "partial_ban": true
       },
       {
-        "s": "DUS:NO1248759",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "DUS:NO1253096",
         "f": [
           "yield_to_call"
@@ -9199,6 +9184,13 @@
         "partial_ban": true
       },
       {
+        "s": "DUS:USU0018LAH3",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "DUS:USU02413AH2",
         "f": [
           "yield_to_call"
@@ -9299,13 +9291,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "DUS:XS201002788",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "DUS:XS202794661",
@@ -13828,7 +13813,8 @@
       {
         "s": "FINRA:AIG4984963",
         "f": [
-          "empty nominal_value"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -19960,6 +19946,14 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "FINRA:BMEE5817991",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
       },
       {
         "s": "FINRA:BMO3945866",
@@ -125737,6 +125731,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:PCAP6107281",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:PCBK4376547",
         "f": [
           "issue_status matured or redeemed",
@@ -168416,7 +168417,7 @@
       {
         "s": "VIE:IT0005365447",
         "f": [
-          "issue_status matured or redeemed",
+          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
