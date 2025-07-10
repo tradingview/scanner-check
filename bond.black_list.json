@@ -3496,7 +3496,6 @@
         "s": "BCBA:NPCAO",
         "f": [
           "close_pct over 500",
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -10845,6 +10844,14 @@
         "partial_ban": false
       },
       {
+        "s": "EUROTLX:IT0005467037",
+        "f": [
+          "yield_to_call",
+          "yield_to_maturity"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "EUROTLX:US040114HS26",
         "f": [
           "yield_to_call"
@@ -10983,6 +10990,13 @@
         "partial_ban": true
       },
       {
+        "s": "EUROTLX:XS2295690742",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "EUROTLX:XS2295691633",
         "f": [
           "issue_status matured or redeemed",
@@ -11014,6 +11028,13 @@
       },
       {
         "s": "EUROTLX:XS2798174434",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "EUROTLX:XS2816639095",
         "f": [
           "yield_to_call"
         ],
@@ -13813,7 +13834,8 @@
       {
         "s": "FINRA:AIG4984963",
         "f": [
-          "empty nominal_value"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -19945,6 +19967,13 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "FINRA:BMEE5817991",
+        "f": [
+          "issue_status matured or redeemed"
+        ],
+        "partial_ban": false
       },
       {
         "s": "FINRA:BMO3945866",
@@ -32246,8 +32275,7 @@
       {
         "s": "FINRA:DVA5140420",
         "f": [
-          "issue_status matured or redeemed",
-          "outstanding_amount less 1000"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -125722,6 +125750,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:PCAP6107281",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:PCBK4376547",
         "f": [
           "issue_status matured or redeemed",
@@ -162573,6 +162608,14 @@
         "partial_ban": true
       },
       {
+        "s": "LUXSE:XS2120855296",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "LUXSE:XS2123756590",
         "f": [
           "yield_to_maturity"
@@ -168401,7 +168444,7 @@
       {
         "s": "VIE:IT0005365447",
         "f": [
-          "issue_status matured or redeemed",
+          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
