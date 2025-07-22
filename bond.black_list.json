@@ -3236,13 +3236,6 @@
         "partial_ban": false
       },
       {
-        "s": "BCBA:MGCHD",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "BCBA:MGCHO",
         "f": [
           "close_pct over 500",
@@ -4782,13 +4775,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "BCBA:RUCAD",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "BCBA:RUCAO",
@@ -7305,13 +7291,6 @@
         "partial_ban": false
       },
       {
-        "s": "BCBA:YMCQD",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "BCBA:YMCQO",
         "f": [
           "close_pct over 500",
@@ -9465,6 +9444,13 @@
         "partial_ban": true
       },
       {
+        "s": "DUS:XS208147404",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "DUS:XS210249338",
         "f": [
           "yield_to_call"
@@ -9552,13 +9538,6 @@
       },
       {
         "s": "DUS:XS223451616",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "DUS:XS224761651",
         "f": [
           "yield_to_call"
         ],
@@ -9694,13 +9673,6 @@
       },
       {
         "s": "DUS:XS234300024",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "DUS:XS234505025",
         "f": [
           "yield_to_call"
         ],
@@ -152281,13 +152253,6 @@
         "partial_ban": true
       },
       {
-        "s": "HAM:XS203679815",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "HAM:XS206901616",
         "f": [
           "yield_to_call"
@@ -166000,7 +165965,8 @@
       {
         "s": "VIE:AT0000A1X416",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
