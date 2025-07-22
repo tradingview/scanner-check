@@ -28721,7 +28721,8 @@
       {
         "s": "FINRA:CPSDF5239253",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -32445,6 +32446,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "FINRA:EHIC5289868",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "FINRA:EHIC5783208",
@@ -83889,6 +83897,7 @@
       {
         "s": "FINRA:FHLN5999628",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -153099,6 +153108,13 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "LS:A4EEAL",
+        "f": [
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
