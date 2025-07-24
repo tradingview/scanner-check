@@ -635,9 +635,8 @@
         "s": "BCBA:BLL25",
         "f": [
           "close_pct over 500",
-          "issue_status null AND mat_date past",
-          "outstanding_amount less 1000",
-          "yield_to_maturity"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -3513,7 +3512,7 @@
         "s": "BCBA:MRCPO",
         "f": [
           "close_pct over 500",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -3628,14 +3627,14 @@
       {
         "s": "BCBA:MRPCC",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
       {
         "s": "BCBA:MRPCD",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -3643,21 +3642,21 @@
         "s": "BCBA:MRPCX",
         "f": [
           "close_pct over 500",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
       {
         "s": "BCBA:MRPCY",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
       {
         "s": "BCBA:MRPCZ",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -10822,13 +10821,6 @@
         "s": "EUROTLX:IT0005453425",
         "f": [
           "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EUROTLX:IT0005661761",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -27001,14 +26993,6 @@
       },
       {
         "s": "FINRA:CDK4641212",
-        "f": [
-          "issue_status matured or redeemed",
-          "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FINRA:CDLX6046219",
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
@@ -123382,7 +123366,7 @@
       {
         "s": "FINRA:MS5340866",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -154075,48 +154059,6 @@
         "partial_ban": true
       },
       {
-        "s": "HAN:RH0H",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "HAN:USU75000BL9",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "HAN:USU75000BP0",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "HAN:USU75000BS4",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "HAN:USU75000CD6",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "HAN:USU75000CE4",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "HAN:XS201002788",
         "f": [
           "yield_to_call"
@@ -158364,20 +158306,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:XQ73",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:XQ74",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -164803,13 +164731,6 @@
         "s": "MUN:FI400019812",
         "f": [
           "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:FR12913272",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
