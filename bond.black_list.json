@@ -142831,7 +142831,6 @@
       {
         "s": "FINRA:VALPQ4168316",
         "f": [
-          "empty nominal_value",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
@@ -142994,8 +142993,8 @@
       {
         "s": "FINRA:VIAS3944184",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -143253,8 +143252,8 @@
       {
         "s": "FINRA:VTDGF3886286",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -144353,27 +144352,6 @@
         "partial_ban": true
       },
       {
-        "s": "FINRA:VZ5637426",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FINRA:VZ5661163",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FINRA:VZ5661164",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:VZ5700819",
         "f": [
           "yield_to_call"
@@ -144445,8 +144423,8 @@
       {
         "s": "FINRA:WBK4020180",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -145306,8 +145284,7 @@
       {
         "s": "FINRA:WFC4994680",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -145709,8 +145686,8 @@
       {
         "s": "FINRA:WLK3957037",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -145843,7 +145820,8 @@
       {
         "s": "FINRA:WNFC5594647",
         "f": [
-          "empty nominal_value"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -146220,8 +146198,8 @@
       {
         "s": "FINRA:ZHOG5312577",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -146279,8 +146257,8 @@
       {
         "s": "FINRA:ZNOG4361992",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -152279,6 +152257,13 @@
         "partial_ban": true
       },
       {
+        "s": "GETTEX:4F0N",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "GETTEX:4V5A",
         "f": [
           "yield_to_call"
@@ -153381,13 +153366,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A2R38P",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "GETTEX:A2R3SS",
