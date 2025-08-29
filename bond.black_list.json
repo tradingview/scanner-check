@@ -2560,6 +2560,13 @@
         "partial_ban": false
       },
       {
+        "s": "BCBA:M16E6",
+        "f": [
+          "close_pct over 500"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "BCBA:MCC1O",
         "f": [
           "close_pct over 500"
@@ -19370,7 +19377,8 @@
       {
         "s": "FINRA:BNPQF5606094",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
