@@ -4245,14 +4245,14 @@
       {
         "s": "BCBA:SOC2C",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
       {
         "s": "BCBA:SOC2D",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -4260,7 +4260,7 @@
         "s": "BCBA:SOC2O",
         "f": [
           "close_pct over 500",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -6345,6 +6345,7 @@
       {
         "s": "BER:TNAA",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -6669,20 +6670,6 @@
         "partial_ban": true
       },
       {
-        "s": "DUS:A3MQTH",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:A460P4",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "DUS:BB04",
         "f": [
           "old coupon_currency",
@@ -6703,13 +6690,6 @@
         "f": [
           "old coupon_currency",
           "old fundamental_currency_code"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:EUA2SCAV",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -6745,13 +6725,6 @@
         "partial_ban": false
       },
       {
-        "s": "DUS:IT567650",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "DUS:NRW0CQ",
         "f": [
           "issue_status null AND mat_date past"
@@ -6773,45 +6746,10 @@
         "partial_ban": true
       },
       {
-        "s": "DUS:SK400002830",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "DUS:TRVD",
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:US345397H89",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:US404280FE4",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:US404280FF1",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:US404280FG9",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -6874,20 +6812,6 @@
         "s": "DUS:XS264328438",
         "f": [
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:XS321622054",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "DUS:XS322596669",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -7202,13 +7126,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:ENITY05_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:ETACV",
         "f": [
           "issue_amount less 1000"
@@ -7237,13 +7154,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:FTFOR01_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:HARSB23_PRO",
         "f": [
           "current_yield"
@@ -7259,62 +7169,6 @@
       },
       {
         "s": "EURONEXT:HDSB17_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB41_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB42_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB43_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB44_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB46_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB47_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB48_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:HGSB49_PRO",
         "f": [
           "empty nominal_value"
         ],
@@ -7375,76 +7229,6 @@
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:JAREN19_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:JAREN21_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:JAREN22_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:JAREN23_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:JAREN24_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:JAREN25_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:LANBK16_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:LANBK20_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:LANBK21_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:LANBK22_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "EURONEXT:LANDBK16_PRO",
@@ -7531,48 +7315,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:MESB12_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:MESB13_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:MESB15_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:MESB18_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:MESB19_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:MESB20_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:NL0000120004",
         "f": [
           "old coupon_currency",
@@ -7619,41 +7361,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:NOTKP03_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:OSPA51_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:OSPA52_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:OSPA53_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:OSPA54_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:RISB12_PRO",
         "f": [
           "current_yield"
@@ -7680,153 +7387,6 @@
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:ROGBO12_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO15_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO16_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO18_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO21_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO22_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO23_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO25_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO26_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGBO27_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS29_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS30_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS82_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS85_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS86_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS87_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS88_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS89_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS90_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS92_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:ROGS93_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "EURONEXT:ROMSB14_PRO",
@@ -7918,797 +7478,6 @@
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SB1NO100_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO101_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO102_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO103_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO104_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO105_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO106_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO107_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO109_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO110_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO111_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO112_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO43_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO44_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO47_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO50_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO51_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO52_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO53_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO54_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO55_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO56_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO57_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO58_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO59_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO60_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO62_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO63_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO64_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO65_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO66_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO67_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO68_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO69_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO70_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO71_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO72_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO76_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO84_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO85_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO86_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO87_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO88_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO89_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO90_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO91_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO92_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO94_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO96_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO97_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB1NO99_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB6810_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SB6813_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR110_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR112_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR113_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR116_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR117_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR118_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR122_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR123_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR125_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR126_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR128_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR129_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR130_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR131_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR132_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR133_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR134_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR135_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR137_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR138_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR139_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR140_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR141_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR142_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR143_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR144_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR145_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR146_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR147_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR148_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR149_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR41_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR64_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR66_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR67_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR68_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR69_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR70_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR71_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR72_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR73_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR74_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR75_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR76_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR77_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR78_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR79_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR80_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR81_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR82_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR83_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR84_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR85_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR86_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR87_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR88_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR89_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR90_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR91_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR92_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "EURONEXT:SGCX",
@@ -9127,95 +7896,11 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:SPBKR107_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPBKR109_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL102_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL103_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL104_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL94_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL95_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL96_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL97_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL98_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SPOL99_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:SPSK25_PRO",
         "f": [
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SPSK25_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "EURONEXT:SRBANK43_PRO",
@@ -9365,83 +8050,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:SRSB27_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB28_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB31_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB32_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB35_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB36_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB37_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB38_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB40_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB41_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SRSB42_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:SSBB12_PRO",
         "f": [
           "current_yield"
@@ -9482,13 +8090,6 @@
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:SUAS",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "EURONEXT:SUNSB11_PRO",
@@ -9706,118 +8307,6 @@
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "EURONEXT:TINDE14_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE17_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE18_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE19_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE20_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE21_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE24_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE25_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE26_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE27_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE28_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE30_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE31_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE32_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE33_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:TINDE34_PRO_ESG",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "EURONEXT:TOTG61_PRO",
@@ -16052,6 +14541,7 @@
       {
         "s": "FINRA:BAC5406326",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -17096,6 +15586,7 @@
       {
         "s": "FINRA:BAC5932336",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -17318,6 +15809,7 @@
       {
         "s": "FINRA:BAC6067736",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -19113,6 +17605,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:BCS5884279",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:BCS5902656",
         "f": [
           "issue_status matured or redeemed",
@@ -19203,6 +17702,7 @@
       {
         "s": "FINRA:BCS5923805",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -19250,6 +17750,7 @@
       {
         "s": "FINRA:BCS5929933",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -27339,6 +25840,7 @@
       {
         "s": "FINRA:C5982625",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -27434,6 +25936,7 @@
       {
         "s": "FINRA:C6056537",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -28098,7 +26601,8 @@
       {
         "s": "FINRA:CCVY4318470",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -28741,6 +27245,7 @@
       {
         "s": "FINRA:CGMHI5991035",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -35282,7 +33787,8 @@
       {
         "s": "FINRA:FFCD4179929",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -45693,6 +44199,7 @@
       {
         "s": "FINRA:FFCD5930140",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -46613,6 +45120,7 @@
       {
         "s": "FINRA:FFCD6136822",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -48371,6 +46879,7 @@
       {
         "s": "FINRA:FHBB5930228",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -48490,6 +46999,7 @@
       {
         "s": "FINRA:FHBB5932767",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -48615,6 +47125,7 @@
       {
         "s": "FINRA:FHBB5935522",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -48662,6 +47173,7 @@
       {
         "s": "FINRA:FHBB5935674",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -48669,6 +47181,7 @@
       {
         "s": "FINRA:FHBB5935677",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -51658,6 +50171,7 @@
       {
         "s": "FINRA:FHLM5929085",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -68409,6 +66923,7 @@
       {
         "s": "FINRA:FHLN5472632",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -71240,6 +69755,7 @@
       {
         "s": "FINRA:FHLN5546917",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -80935,6 +79451,7 @@
       {
         "s": "FINRA:FHLN5805645",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -85340,6 +83857,7 @@
       {
         "s": "FINRA:FHLN5888191",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -85507,6 +84025,7 @@
       {
         "s": "FINRA:FHLN5891325",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -88850,6 +87369,7 @@
       {
         "s": "FINRA:FHLN5995653",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -89000,6 +87520,7 @@
       {
         "s": "FINRA:FHLN5998159",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -89015,6 +87536,7 @@
       {
         "s": "FINRA:FHLN5998217",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -92485,6 +91007,7 @@
       {
         "s": "FINRA:FHLN6063141",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -92563,6 +91086,7 @@
       {
         "s": "FINRA:FHLN6065319",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -92681,6 +91205,7 @@
       {
         "s": "FINRA:FHLN6067854",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -92688,6 +91213,7 @@
       {
         "s": "FINRA:FHLN6067908",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -92727,6 +91253,7 @@
       {
         "s": "FINRA:FHLN6068138",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -94524,6 +93051,7 @@
       {
         "s": "FINRA:FHLN6135788",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -94546,6 +93074,7 @@
       {
         "s": "FINRA:FHLN6138904",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -97274,7 +95803,7 @@
       {
         "s": "FINRA:FMCC5059123",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -101272,6 +99801,7 @@
       {
         "s": "FINRA:FMCC5586838",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -111985,6 +110515,7 @@
       {
         "s": "FINRA:FMCC6063639",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -112092,6 +110623,7 @@
       {
         "s": "FINRA:FMCC6073218",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -114949,6 +113481,7 @@
       {
         "s": "FINRA:FNMA5745553",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -116652,6 +115185,7 @@
       {
         "s": "FINRA:FNMA5919663",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -118353,6 +116887,7 @@
       {
         "s": "FINRA:FNMA6069254",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -118367,6 +116902,7 @@
       {
         "s": "FINRA:FNMA6070145",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -129396,28 +127932,32 @@
       {
         "s": "FINRA:JPM5673993",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "FINRA:JPM5673994",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "FINRA:JPM5673996",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "FINRA:JPM5673997",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -130390,7 +128930,8 @@
       {
         "s": "FINRA:JPM5919910",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -135003,6 +133544,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:MS5806549",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:MS5819269",
         "f": [
           "issue_status matured or redeemed",
@@ -135189,6 +133737,7 @@
       {
         "s": "FINRA:MS5994902",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -135196,6 +133745,7 @@
       {
         "s": "FINRA:MS5995986",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -136689,6 +135239,7 @@
       {
         "s": "FINRA:NTIOF5996792",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -141597,7 +140148,8 @@
       {
         "s": "FINRA:RBC5772732",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -141800,7 +140352,8 @@
       {
         "s": "FINRA:RGSH5092894",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -143186,6 +141739,7 @@
       {
         "s": "FINRA:RY5981414",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -143201,6 +141755,7 @@
       {
         "s": "FINRA:RY5995073",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -148862,6 +147417,7 @@
       {
         "s": "FINRA:TD5995776",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -150201,6 +148757,7 @@
       {
         "s": "FINRA:TRAUF4306087",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -150442,7 +148999,8 @@
       {
         "s": "FINRA:TSLA4301524",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -151843,7 +150401,8 @@
       {
         "s": "FINRA:UNM4307731",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -154421,6 +152980,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:WFC5679614",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:WFC5702759",
         "f": [
           "issue_status matured or redeemed",
@@ -156191,20 +154757,6 @@
         "partial_ban": false
       },
       {
-        "s": "FWB:US2079KAZ0",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FWB:US2079KBB2",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FWB:US225447AD3",
         "f": [
           "issue_status matured or redeemed",
@@ -156419,20 +154971,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FWB:US66989HAY4",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FWB:US66989HBC1",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -156669,20 +155207,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FWB:US960413BB7",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FWB:US960413BC5",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -158032,13 +156556,6 @@
         "partial_ban": true
       },
       {
-        "s": "FWB:XS322451741",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FWB:XS44147980",
         "f": [
           "current_yield",
@@ -158278,13 +156795,6 @@
         "partial_ban": false
       },
       {
-        "s": "GETTEX:A19C7V",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "GETTEX:A19DPP",
         "f": [
           "issue_status matured or redeemed",
@@ -158429,24 +156939,10 @@
         "partial_ban": false
       },
       {
-        "s": "GETTEX:A1AVFV",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "GETTEX:A1G0EJ",
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A1HFNW",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -159388,6 +157884,7 @@
       {
         "s": "GETTEX:A3KYJL",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -159521,13 +158018,6 @@
         "partial_ban": false
       },
       {
-        "s": "GETTEX:A3LDLP",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "GETTEX:A3LDP0",
         "f": [
           "issue_status matured or redeemed",
@@ -159639,13 +158129,6 @@
         "partial_ban": false
       },
       {
-        "s": "GETTEX:A3LWNK",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "GETTEX:A3MQBD",
         "f": [
           "yield_to_call",
@@ -159658,13 +158141,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A4D6KD",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -159700,41 +158176,6 @@
         "partial_ban": false
       },
       {
-        "s": "GETTEX:A4EBB1",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A4EDRV",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A4EH3S",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A4EH92",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "GETTEX:A4EJPJ",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "GETTEX:A4SJA2",
         "f": [
           "issue_status matured or redeemed",
@@ -159745,7 +158186,8 @@
       {
         "s": "GETTEX:A4SJFD",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -166065,13 +164507,6 @@
         "partial_ban": false
       },
       {
-        "s": "LUXSE:USP3579ECZ80",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "LUXSE:USP56243AD31",
         "f": [
           "issue_status matured or redeemed",
@@ -167600,20 +166035,6 @@
         "partial_ban": false
       },
       {
-        "s": "LUXSE:XS3225966699",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LUXSE:XS3225966939",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "MUN:104A",
         "f": [
           "current_yield"
@@ -167735,20 +166156,6 @@
         "partial_ban": false
       },
       {
-        "s": "MUN:CH123210714",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:CH35394537",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "MUN:CV3B",
         "f": [
           "issue_status null AND mat_date past"
@@ -167760,13 +166167,6 @@
         "f": [
           "old coupon_currency",
           "old fundamental_currency_code"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:ES0012P7",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -167790,13 +166190,6 @@
         "f": [
           "old coupon_currency",
           "old fundamental_currency_code"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:IT563473",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -167849,13 +166242,6 @@
         "s": "MUN:SNGB",
         "f": [
           "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:US4651387N9",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -167957,48 +166343,6 @@
         "s": "MUN:XS264328438",
         "f": [
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:XS279461096",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:XS304539160",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:XS311255231",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:XS319776834",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:XS320193672",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:XS49876831",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -168604,7 +166948,8 @@
       {
         "s": "SSE:127898",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -170125,7 +168470,8 @@
       {
         "s": "SSE:240193",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -170619,13 +168965,6 @@
         "partial_ban": false
       },
       {
-        "s": "TRADEGATE:GRN003",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "TRADEGATE:HSH304",
         "f": [
           "issue_status matured or redeemed",
@@ -170803,13 +169142,6 @@
           "yield_to_call"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "TRADEGATE:XS322449810",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "TRADEGATE:XS80863861",
