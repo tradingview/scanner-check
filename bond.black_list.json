@@ -157148,13 +157148,6 @@
         "partial_ban": false
       },
       {
-        "s": "GETTEX:A28ZTV",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "GETTEX:A2NBK3",
         "f": [
           "issue_status null AND mat_date past"
@@ -162754,14 +162747,6 @@
         "partial_ban": false
       },
       {
-        "s": "LSE:EW15",
-        "f": [
-          "issue_status matured or redeemed",
-          "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "LSE:EZF2",
         "f": [
           "issue_status matured or redeemed",
@@ -163008,6 +162993,13 @@
         "s": "LSE:YC47",
         "f": [
           "issue_status matured or redeemed"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "LSE:YZ18",
+        "f": [
+          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -165630,7 +165622,8 @@
         "s": "MUN:26PA",
         "f": [
           "issue_status matured or redeemed",
-          "outstanding_amount less 1000"
+          "outstanding_amount less 1000",
+          "yield_to_maturity"
         ],
         "partial_ban": false
       },
@@ -168864,7 +168857,8 @@
       {
         "s": "TASE:DSMN.B6",
         "f": [
-          "empty nominal_value"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
