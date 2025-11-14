@@ -729,10 +729,16 @@
         "partial_ban": true
       },
       {
+        "s": "AMEX:PTHS",
+        "f": [
+          "effective_interest_rate_on_debt_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "AMEX:PTN",
         "f": [
-          "zmijewski_score_fy",
-          "zmijewski_score_ttm"
+          "zmijewski_score_fy"
         ],
         "partial_ban": true
       },
@@ -812,8 +818,8 @@
       {
         "s": "AMEX:SOAR",
         "f": [
-          "zmijewski_score_fy",
-          "zmijewski_score_ttm"
+          "sloan_ratio_ttm",
+          "zmijewski_score_fy"
         ],
         "partial_ban": true
       },
@@ -1597,7 +1603,7 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
-          "zmijewski_score_ttm"
+          "sloan_ratio_ttm"
         ],
         "partial_ban": true
       },
@@ -2793,13 +2799,6 @@
         "partial_ban": true
       },
       {
-        "s": "NASDAQ:CING",
-        "f": [
-          "zmijewski_score_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NASDAQ:CISS",
         "f": [
           "effective_interest_rate_on_debt_fy",
@@ -2859,8 +2858,7 @@
       {
         "s": "NASDAQ:CLRB",
         "f": [
-          "zmijewski_score_fy",
-          "zmijewski_score_ttm"
+          "zmijewski_score_fy"
         ],
         "partial_ban": true
       },
@@ -4398,13 +4396,6 @@
         "partial_ban": true
       },
       {
-        "s": "NASDAQ:HVMCU",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "NASDAQ:HWH",
         "f": [
           "ebitda_margin_fy",
@@ -5321,8 +5312,7 @@
       {
         "s": "NASDAQ:LUCY",
         "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -5520,7 +5510,8 @@
         "s": "NASDAQ:MGTX",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_ttm",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": true
       },
@@ -5886,9 +5877,17 @@
         "partial_ban": true
       },
       {
+        "s": "NASDAQ:NETD",
+        "f": [
+          "sloan_ratio_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NASDAQ:NETDU",
         "f": [
-          "no longer trading"
+          "no longer trading",
+          "sloan_ratio_ttm"
         ],
         "partial_ban": false
       },
@@ -6190,9 +6189,9 @@
         "s": "NASDAQ:NWTG",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm",
           "effective_interest_rate_on_debt_fy",
-          "zmijewski_score_fy"
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": true
       },
@@ -8174,6 +8173,13 @@
         "partial_ban": true
       },
       {
+        "s": "NASDAQ:SUIG",
+        "f": [
+          "ebitda_margin_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NASDAQ:SUPX",
         "f": [
           "ebitda_margin_fy",
@@ -8499,6 +8505,8 @@
         "s": "NASDAQ:TRAW",
         "f": [
           "ebitda_margin_fy",
+          "ebitda_margin_ttm",
+          "sloan_ratio_ttm",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
@@ -8688,6 +8696,13 @@
         "partial_ban": false
       },
       {
+        "s": "NASDAQ:VANI",
+        "f": [
+          "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NASDAQ:VBIX",
         "f": [
           "effective_interest_rate_on_debt_ttm"
@@ -8717,6 +8732,13 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "NASDAQ:VERO",
+        "f": [
+          "zmijewski_score_ttm"
         ],
         "partial_ban": true
       },
@@ -17694,13 +17716,6 @@
         "partial_ban": false
       },
       {
-        "s": "OTC:ARLDS",
-        "f": [
-          "empty symbol"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "OTC:ARLHS",
         "f": [
           "empty symbol"
@@ -19682,13 +19697,6 @@
         "s": "OTC:AVLS",
         "f": [
           "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "OTC:AVLUS",
-        "f": [
-          "empty symbol"
         ],
         "partial_ban": false
       },
@@ -50109,10 +50117,9 @@
         "s": "OTC:LFBCF",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm",
-          "no longer trading"
+          "ebitda_margin_ttm"
         ],
-        "partial_ban": false
+        "partial_ban": true
       },
       {
         "s": "OTC:LFCOF",
@@ -51419,13 +51426,6 @@
       },
       {
         "s": "OTC:LUKOY",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "OTC:LUMB",
         "f": [
           "no longer trading"
         ],
@@ -58444,13 +58444,6 @@
       },
       {
         "s": "OTC:NCCBF",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "OTC:NCCGF",
         "f": [
           "no longer trading"
         ],
@@ -73803,13 +73796,6 @@
       },
       {
         "s": "OTC:SHWK",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "OTC:SHWZ",
         "f": [
           "no longer trading"
         ],
