@@ -169798,7 +169798,8 @@
       {
         "s": "OTCB:DK0009820086",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -170370,13 +170371,6 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "OTCB:TRT021030T18",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "OTCB:US105756AL40",
