@@ -7502,7 +7502,7 @@
       {
         "s": "EURONEXT:REIB",
         "f": [
-          "issue_status matured or redeemed",
+          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -12052,6 +12052,14 @@
       },
       {
         "s": "FINRA:ATO.GC",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:ATRO5950814",
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
@@ -137514,6 +137522,14 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:LYV5954561",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:M.AE",
         "f": [
           "issue_status matured or redeemed",
@@ -143034,6 +143050,13 @@
         "s": "FINRA:PIKE5339003",
         "f": [
           "issue_status matured or redeemed"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "FINRA:PIKE5711354",
+        "f": [
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -158376,6 +158399,13 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:VZ4577393",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "FINRA:VZ4594969",
         "f": [
           "issue_status matured or redeemed",
@@ -162446,6 +162476,14 @@
         "partial_ban": false
       },
       {
+        "s": "FWB:US538034BB4",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FWB:US54303AZ5",
         "f": [
           "current_yield",
@@ -165936,6 +165974,14 @@
       },
       {
         "s": "GETTEX:A3KTUZ",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "GETTEX:A3KUUM",
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
@@ -173244,7 +173290,6 @@
       {
         "s": "LUXSE:XS0304004459",
         "f": [
-          "empty nominal_value",
           "old coupon_currency",
           "old fundamental_currency_code",
           "yield_to_maturity"
