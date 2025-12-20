@@ -27246,7 +27246,8 @@
       {
         "s": "FINRA:CGMHI5930054",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -32307,6 +32308,7 @@
       {
         "s": "FINRA:DXSCF5714295",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
