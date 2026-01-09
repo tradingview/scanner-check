@@ -6547,13 +6547,6 @@
         "partial_ban": false
       },
       {
-        "s": "EURONEXT:NL0015073S14",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:REIB",
         "f": [
           "issue_status null AND mat_date past"
@@ -163623,6 +163616,7 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000",
+          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": false
@@ -174898,13 +174892,6 @@
         "partial_ban": false
       },
       {
-        "s": "NSENG:CSF2025S1",
-        "f": [
-          "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "NSENG:DAN2026S1TB",
         "f": [
           "yield_to_maturity"
@@ -179031,7 +179018,6 @@
       {
         "s": "SWB:XS2341882913",
         "f": [
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": true
@@ -179120,6 +179106,13 @@
           "current_yield",
           "yield_to_maturity",
           "yield_to_put"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "SWB:XS2581879207",
+        "f": [
+          "yield_to_call"
         ],
         "partial_ban": true
       },
