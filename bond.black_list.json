@@ -53157,6 +53157,13 @@
         "partial_ban": true
       },
       {
+        "s": "EURONEXT:SUAS",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "EURONEXT:SWB15_PRO",
         "f": [
           "last-price-update-time",
@@ -79341,9 +79348,10 @@
         "s": "FINRA:BNP5972052",
         "f": [
           "last-price-update-time",
-          "last_price_update_time"
+          "last_price_update_time",
+          "outstanding_amount less 1000"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "FINRA:BNP5972172",
@@ -83646,7 +83654,8 @@
       {
         "s": "FINRA:BNS5719484",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -195875,14 +195884,6 @@
         "partial_ban": true
       },
       {
-        "s": "FINRA:FHLN6285127",
-        "f": [
-          "last-price-update-time",
-          "last_price_update_time"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FINRA:FHLN6285129",
         "f": [
           "last-price-update-time",
@@ -241186,6 +241187,7 @@
       {
         "s": "FINRA:GS6004753",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -258555,7 +258557,7 @@
       {
         "s": "FINRA:MHIC5727902",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -301610,7 +301612,8 @@
       {
         "s": "GETTEX:A2RWF5",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -301976,7 +301979,8 @@
       {
         "s": "GETTEX:A3KSPD",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -302274,7 +302278,8 @@
       {
         "s": "GETTEX:A3LCYQ",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -302493,7 +302498,8 @@
       {
         "s": "GETTEX:A3MQUY",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -302806,7 +302812,8 @@
       {
         "s": "GETTEX:HLB2PM",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -302829,7 +302836,8 @@
       {
         "s": "GETTEX:LEGE",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -302876,7 +302884,8 @@
       {
         "s": "GETTEX:NRW0H9",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -539842,9 +539851,10 @@
       {
         "s": "VIE:AT0000A2N2B1",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "last-price-update-time",
-          "last_price_update_time"
+          "last_price_update_time",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
