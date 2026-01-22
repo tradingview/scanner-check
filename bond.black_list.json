@@ -255378,11 +255378,10 @@
       {
         "s": "FINRA:KBSK6288539",
         "f": [
-          "empty nominal_value",
           "last-price-update-time",
           "last_price_update_time"
         ],
-        "partial_ban": false
+        "partial_ban": true
       },
       {
         "s": "FINRA:KBSM5298859",
@@ -282634,13 +282633,6 @@
         "partial_ban": true
       },
       {
-        "s": "FINRA:SJMI6281551",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:SKLZ5325668",
         "f": [
           "last-price-update-time",
@@ -299646,7 +299638,6 @@
       {
         "s": "FWB:DL8Y3J",
         "f": [
-          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -299918,13 +299909,6 @@
           "current_yield"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "FWB:NZLGFDT016C",
-        "f": [
-          "issue_amount less 1000"
-        ],
-        "partial_ban": false
       },
       {
         "s": "FWB:OF81",
@@ -301054,6 +301038,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "FWB:USU42804AW1",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "FWB:USU46093AH0",
@@ -318928,10 +318919,12 @@
       {
         "s": "LS:A28ZYJ",
         "f": [
+          "issue_status matured or redeemed",
           "last-price-update-time",
-          "last_price_update_time"
+          "last_price_update_time",
+          "outstanding_amount less 1000"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "LS:A2AASM",
@@ -410625,7 +410618,6 @@
       {
         "s": "LUXSE:DE000DL8Y3J4",
         "f": [
-          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -413478,13 +413470,6 @@
           "last_price_update_time"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "LUXSE:XS3271067590",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "LUXSE:XS3277805571",
@@ -507987,6 +507972,14 @@
         "partial_ban": false
       },
       {
+        "s": "SWB:XS2199369070",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "SWB:XS2205566206",
         "f": [
           "yield_to_call",
@@ -526983,9 +526976,10 @@
       {
         "s": "SZSE:191142",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "last-price-update-time",
-          "last_price_update_time"
+          "last_price_update_time",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
