@@ -18873,10 +18873,9 @@
       {
         "s": "BCBA:TLCTO",
         "f": [
-          "last-price-update-time",
-          "last_price_update_time"
+          "close_pct over 500"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "BCBA:TLCTX",
@@ -297748,7 +297747,6 @@
       {
         "s": "FWB:DL8Y3J",
         "f": [
-          "issue_status null AND mat_date past",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -298034,13 +298032,6 @@
           "yield_to_call"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "FWB:NZLGFDT016C",
-        "f": [
-          "issue_amount less 1000"
-        ],
-        "partial_ban": false
       },
       {
         "s": "FWB:OF81",
@@ -316927,10 +316918,12 @@
       {
         "s": "LS:A28ZYJ",
         "f": [
+          "issue_status matured or redeemed",
           "last-price-update-time",
-          "last_price_update_time"
+          "last_price_update_time",
+          "outstanding_amount less 1000"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "LS:A2AASM",
@@ -524794,9 +524787,10 @@
       {
         "s": "SZSE:191142",
         "f": [
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "last-price-update-time",
-          "last_price_update_time"
+          "last_price_update_time",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
