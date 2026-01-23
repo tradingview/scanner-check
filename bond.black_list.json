@@ -450053,13 +450053,6 @@
         "partial_ban": true
       },
       {
-        "s": "OTCB:912797PD3",
-        "f": [
-          "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "OTCB:912810FS2",
         "f": [
           "issue_status matured or redeemed",
@@ -450072,6 +450065,15 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTCB:91282CPU9",
+        "f": [
+          "empty nominal_value",
+          "last-price-update-time",
+          "last_price_update_time"
         ],
         "partial_ban": false
       },
