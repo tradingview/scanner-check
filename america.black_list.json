@@ -526,7 +526,8 @@
       {
         "s": "AMEX:IAF",
         "f": [
-          "ebitda_margin_fy"
+          "ebitda_margin_fy",
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -1076,13 +1077,6 @@
         "partial_ban": true
       },
       {
-        "s": "AMEX:VFL",
-        "f": [
-          "ebitda_margin_fy"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "AMEX:VNRX",
         "f": [
           "ebitda_margin_fy",
@@ -1133,6 +1127,13 @@
         "s": "CBOE:PMMY",
         "f": [
           "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "CBOE:USLN",
+        "f": [
+          "empty symbol"
         ],
         "partial_ban": false
       },
@@ -1227,7 +1228,6 @@
       {
         "s": "NASDAQ:ABVC",
         "f": [
-          "ebitda_margin_fy",
           "ebitda_margin_ttm"
         ],
         "partial_ban": true
@@ -1813,13 +1813,6 @@
         "partial_ban": true
       },
       {
-        "s": "NASDAQ:ANAB",
-        "f": [
-          "ebitda_margin_fy"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NASDAQ:ANE",
         "f": [
           "empty symbol"
@@ -1922,8 +1915,8 @@
       {
         "s": "NASDAQ:AQST",
         "f": [
-          "ebitda_margin_ttm",
-          "zmijewski_score_fy"
+          "ebitda_margin_fy",
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -1952,6 +1945,14 @@
           "sloan_ratio_ttm",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "NASDAQ:ARCT",
+        "f": [
+          "ebitda_margin_fy",
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -2985,6 +2986,13 @@
         "partial_ban": false
       },
       {
+        "s": "NASDAQ:CCRN",
+        "f": [
+          "effective_interest_rate_on_debt_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NASDAQ:CD",
         "f": [
           "ebitda_margin_fy",
@@ -3295,13 +3303,6 @@
           "ebitda_margin_ttm",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "NASDAQ:CLRB",
-        "f": [
-          "zmijewski_score_fy"
         ],
         "partial_ban": true
       },
@@ -4294,14 +4295,6 @@
         "partial_ban": true
       },
       {
-        "s": "NASDAQ:EYPT",
-        "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NASDAQ:FAMI",
         "f": [
           "ebitda_margin_fy",
@@ -5033,6 +5026,13 @@
           "empty symbol"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "NASDAQ:HRZN",
+        "f": [
+          "revenue_per_share_fq"
+        ],
+        "partial_ban": true
       },
       {
         "s": "NASDAQ:HSCS",
@@ -6483,6 +6483,7 @@
       {
         "s": "NASDAQ:MDCX",
         "f": [
+          "sloan_ratio_ttm",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
@@ -7356,6 +7357,8 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
+          "revenue_per_share_fq",
+          "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
         "partial_ban": true
@@ -8376,6 +8379,14 @@
         "partial_ban": true
       },
       {
+        "s": "NASDAQ:RIGL",
+        "f": [
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NASDAQ:RIME",
         "f": [
           "effective_interest_rate_on_debt_fy",
@@ -8674,14 +8685,6 @@
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
           "zmijewski_score_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "NASDAQ:SCYX",
-        "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -9288,13 +9291,6 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "NASDAQ:STKL",
-        "f": [
-          "neg_total_cash_dividends_paid_ttm"
         ],
         "partial_ban": true
       },
@@ -10219,9 +10215,7 @@
         "s": "NASDAQ:VSTM",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm",
-          "zmijewski_score_fy",
-          "zmijewski_score_ttm"
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -10954,13 +10948,6 @@
         "partial_ban": true
       },
       {
-        "s": "NYSE:AMPX",
-        "f": [
-          "ebitda_margin_fy"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NYSE:ANGX",
         "f": [
           "sloan_ratio_fy",
@@ -11225,6 +11212,20 @@
         "partial_ban": true
       },
       {
+        "s": "NYSE:BW",
+        "f": [
+          "neg_research_and_dev_fq"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "NYSE:BW/PA",
+        "f": [
+          "neg_research_and_dev_fq"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NYSE:BWG",
         "f": [
           "ebitda_margin_fy",
@@ -11336,6 +11337,14 @@
         "s": "NYSE:CUBI",
         "f": [
           "neg_total_cash_dividends_paid_fh"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "NYSE:CVEO",
+        "f": [
+          "neg_total_cash_dividends_paid_fh",
+          "neg_total_cash_dividends_paid_fq"
         ],
         "partial_ban": true
       },
@@ -11889,6 +11898,13 @@
         "partial_ban": true
       },
       {
+        "s": "NYSE:GLED.U",
+        "f": [
+          "empty symbol"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "NYSE:GNT",
         "f": [
           "ebitda_margin_ttm"
@@ -12009,7 +12025,8 @@
       {
         "s": "NYSE:HQH",
         "f": [
-          "ebitda_margin_fy"
+          "ebitda_margin_fy",
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -12094,13 +12111,6 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "NYSE:IIF",
-        "f": [
-          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -12219,6 +12229,13 @@
           "ebitda_margin_fy"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "NYSE:KCAC.U",
+        "f": [
+          "empty symbol"
+        ],
+        "partial_ban": false
       },
       {
         "s": "NYSE:KF",
@@ -12393,6 +12410,7 @@
       {
         "s": "NYSE:MSD",
         "f": [
+          "ebitda_margin_fy",
           "ebitda_margin_ttm"
         ],
         "partial_ban": true
@@ -12875,14 +12893,6 @@
         "partial_ban": true
       },
       {
-        "s": "NYSE:SES",
-        "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NYSE:SITC",
         "f": [
           "sloan_ratio_fy",
@@ -12999,14 +13009,6 @@
         "partial_ban": true
       },
       {
-        "s": "NYSE:STEM",
-        "f": [
-          "sloan_ratio_fy",
-          "zmijewski_score_fy"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NYSE:STEW",
         "f": [
           "ebitda_margin_fy",
@@ -13055,6 +13057,7 @@
       {
         "s": "NYSE:TEI",
         "f": [
+          "ebitda_margin_fy",
           "ebitda_margin_ttm"
         ],
         "partial_ban": true
@@ -13076,7 +13079,9 @@
       {
         "s": "NYSE:THQ",
         "f": [
-          "ebitda_margin_fy"
+          "ebitda_margin_fy",
+          "ebitda_margin_ttm",
+          "revenue_per_share_fh"
         ],
         "partial_ban": true
       },
@@ -14661,12 +14666,13 @@
       {
         "s": "OTC:AERS",
         "f": [
+          "no longer trading",
           "sloan_ratio_fy",
           "sloan_ratio_ttm",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "OTC:AETHF",
@@ -16989,6 +16995,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:AKBLF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:AKBTY",
         "f": [
           "neg_total_cash_dividends_paid_fh",
@@ -16998,6 +17011,13 @@
       },
       {
         "s": "OTC:AKCLY",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:AKEJF",
         "f": [
           "no longer trading"
         ],
@@ -18865,9 +18885,9 @@
       {
         "s": "OTC:ARCPF",
         "f": [
+          "ebitda_margin_fy",
           "ebitda_margin_ttm",
           "no longer trading",
-          "sloan_ratio_fy",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
@@ -20392,6 +20412,13 @@
       },
       {
         "s": "OTC:ATNNF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:ATOGF",
         "f": [
           "no longer trading"
         ],
@@ -21955,9 +21982,17 @@
       {
         "s": "OTC:AYURF",
         "f": [
+          "no longer trading",
           "zmijewski_score_ttm"
         ],
-        "partial_ban": true
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:AYYLF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
       },
       {
         "s": "OTC:AZBLY",
@@ -22434,6 +22469,13 @@
         "partial_ban": true
       },
       {
+        "s": "OTC:BCHMF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:BCHPY",
         "f": [
           "ebitda_margin_fy",
@@ -22844,6 +22886,14 @@
           "ebitda_margin_ttm",
           "neg_total_cash_dividends_paid_ttm",
           "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "OTC:BFLBF",
+        "f": [
+          "neg_total_cash_dividends_paid_fh",
+          "neg_total_cash_dividends_paid_fq"
         ],
         "partial_ban": true
       },
@@ -24148,9 +24198,12 @@
       {
         "s": "OTC:BNIGF",
         "f": [
+          "ebitda_margin_fy",
           "ebitda_margin_ttm",
           "no longer trading",
+          "sloan_ratio_fy",
           "sloan_ratio_ttm",
+          "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
         "partial_ban": false
@@ -24542,10 +24595,11 @@
       {
         "s": "OTC:BQHG",
         "f": [
+          "no longer trading",
           "sloan_ratio_ttm",
           "zmijewski_score_ttm"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "OTC:BQST",
@@ -25165,6 +25219,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:BTURF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:BTVRF",
         "f": [
           "no longer trading"
@@ -25641,6 +25702,13 @@
           "no longer trading"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "OTC:BZLYF",
+        "f": [
+          "neg_total_cash_dividends_paid_fh"
+        ],
+        "partial_ban": true
       },
       {
         "s": "OTC:BZRD",
@@ -27218,13 +27286,6 @@
         "partial_ban": false
       },
       {
-        "s": "OTC:CGHLY",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "OTC:CGHOF",
         "f": [
           "no longer trading"
@@ -27881,6 +27942,13 @@
       },
       {
         "s": "OTC:CHVKF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:CHWE",
         "f": [
           "no longer trading"
         ],
@@ -28550,6 +28618,13 @@
         "partial_ban": true
       },
       {
+        "s": "OTC:CLSZF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:CLTEF",
         "f": [
           "ebitda_margin_fy",
@@ -29016,6 +29091,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:CNBW",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:CNBX",
         "f": [
           "sloan_ratio_fy",
@@ -29134,6 +29216,16 @@
           "zmijewski_score_ttm"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "OTC:CNER",
+        "f": [
+          "sloan_ratio_fy",
+          "sloan_ratio_ttm",
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
       },
       {
         "s": "OTC:CNEWF",
@@ -29377,13 +29469,6 @@
           "sloan_ratio_fy",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "OTC:CNTPF",
-        "f": [
-          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -33298,6 +33383,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:DRGV",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:DRJG",
         "f": [
           "no longer trading",
@@ -33750,9 +33842,10 @@
         "s": "OTC:DVDDF",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_ttm",
+          "no longer trading"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "OTC:DVEGF",
@@ -38777,7 +38870,6 @@
           "cash_per_share_fq",
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
-          "effective_interest_rate_on_debt_ttm",
           "no longer trading",
           "sloan_ratio_ttm",
           "zmijewski_score_ttm"
@@ -41120,6 +41212,13 @@
       },
       {
         "s": "OTC:GNZUY",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:GOCOD",
         "f": [
           "no longer trading"
         ],
@@ -43689,6 +43788,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:HLPMF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:HLPXF",
         "f": [
           "no longer trading"
@@ -45926,7 +46032,9 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
+          "neg_research_and_dev_fq",
           "no longer trading",
+          "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
         "partial_ban": false
@@ -46095,7 +46203,7 @@
         "s": "OTC:IGCRF",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm",
+          "revenue_per_share_current",
           "sloan_ratio_fy",
           "sloan_ratio_ttm",
           "zmijewski_score_fy",
@@ -47285,9 +47393,10 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
-          "effective_interest_rate_on_debt_ttm"
+          "effective_interest_rate_on_debt_ttm",
+          "no longer trading"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "OTC:IPLY",
@@ -47527,7 +47636,9 @@
       {
         "s": "OTC:IRNRF",
         "f": [
-          "no longer trading"
+          "no longer trading",
+          "sloan_ratio_ttm",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": false
       },
@@ -47841,6 +47952,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:ISOL",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:ISON",
         "f": [
           "no longer trading"
@@ -47915,6 +48033,13 @@
       },
       {
         "s": "OTC:ISSEF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:ISSIF",
         "f": [
           "no longer trading"
         ],
@@ -48463,7 +48588,7 @@
       {
         "s": "OTC:IVDYF",
         "f": [
-          "empty symbol"
+          "no longer trading"
         ],
         "partial_ban": false
       },
@@ -48917,6 +49042,13 @@
       },
       {
         "s": "OTC:JDHIY",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:JDLGF",
         "f": [
           "no longer trading"
         ],
@@ -50250,6 +50382,13 @@
       },
       {
         "s": "OTC:KGRI",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:KGTFY",
         "f": [
           "no longer trading"
         ],
@@ -53939,9 +54078,10 @@
         "s": "OTC:MBGPF",
         "f": [
           "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_ttm",
+          "no longer trading"
         ],
-        "partial_ban": true
+        "partial_ban": false
       },
       {
         "s": "OTC:MBLHS",
@@ -54078,7 +54218,7 @@
         "s": "OTC:MCCHF",
         "f": [
           "no longer trading",
-          "zmijewski_score_ttm"
+          "zmijewski_score_fy"
         ],
         "partial_ban": false
       },
@@ -58694,8 +58834,8 @@
       {
         "s": "OTC:MWCAF",
         "f": [
-          "ebitda_margin_fy",
           "no longer trading",
+          "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
         "partial_ban": false
@@ -59955,6 +60095,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:MXMGF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:MXOFS",
         "f": [
           "empty symbol"
@@ -60922,11 +61069,10 @@
       {
         "s": "OTC:NGCGD",
         "f": [
-          "empty symbol",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
-        "partial_ban": false
+        "partial_ban": true
       },
       {
         "s": "OTC:NGHI",
@@ -63372,7 +63518,7 @@
       {
         "s": "OTC:OBULD",
         "f": [
-          "empty symbol"
+          "no longer trading"
         ],
         "partial_ban": false
       },
@@ -64159,8 +64305,7 @@
       {
         "s": "OTC:OPMBF",
         "f": [
-          "empty symbol",
-          "neg_total_cash_dividends_paid_fq"
+          "empty symbol"
         ],
         "partial_ban": false
       },
@@ -64340,6 +64485,13 @@
       },
       {
         "s": "OTC:OROVF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:OROVY",
         "f": [
           "no longer trading"
         ],
@@ -65993,6 +66145,7 @@
       {
         "s": "OTC:PHNGF",
         "f": [
+          "ebitda_margin_ttm",
           "no longer trading"
         ],
         "partial_ban": false
@@ -66814,7 +66967,6 @@
       {
         "s": "OTC:PNDDF",
         "f": [
-          "ebitda_margin_ttm",
           "no longer trading"
         ],
         "partial_ban": false
@@ -67910,10 +68062,9 @@
       {
         "s": "OTC:PSUD",
         "f": [
-          "cash_per_share_fy",
-          "current_ratio_fy",
-          "quick_ratio_fy",
+          "sloan_ratio_fy",
           "sloan_ratio_ttm",
+          "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
         "partial_ban": true
@@ -68431,6 +68582,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:PUMD",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:PUPOF",
         "f": [
           "no longer trading"
@@ -68836,6 +68994,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:QBCAF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:QBTQF",
         "f": [
           "sloan_ratio_fy",
@@ -68859,8 +69024,7 @@
         "s": "OTC:QCCUF",
         "f": [
           "sloan_ratio_fy",
-          "sloan_ratio_ttm",
-          "zmijewski_score_ttm"
+          "sloan_ratio_ttm"
         ],
         "partial_ban": true
       },
@@ -73529,8 +73693,8 @@
         "s": "OTC:RVSTF",
         "f": [
           "no longer trading",
-          "revenue_per_share_current",
-          "revenue_per_share_fy"
+          "sloan_ratio_fy",
+          "sloan_ratio_ttm"
         ],
         "partial_ban": false
       },
@@ -74410,6 +74574,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:SCAL",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:SCANF",
         "f": [
           "empty symbol"
@@ -74426,6 +74597,7 @@
       {
         "s": "OTC:SCBGF",
         "f": [
+          "neg_total_cash_dividends_paid_fh",
           "no longer trading"
         ],
         "partial_ban": false
@@ -75671,6 +75843,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:SHANY",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:SHAOF",
         "f": [
           "no longer trading"
@@ -76263,13 +76442,6 @@
         "partial_ban": false
       },
       {
-        "s": "OTC:SIPC",
-        "f": [
-          "ebitda_margin_fy"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "OTC:SIRLF",
         "f": [
           "no longer trading"
@@ -76563,11 +76735,10 @@
       {
         "s": "OTC:SKYI",
         "f": [
-          "no longer trading",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
-        "partial_ban": false
+        "partial_ban": true
       },
       {
         "s": "OTC:SLAMF",
@@ -77633,6 +77804,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:SOHI",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:SOHOF",
         "f": [
           "no longer trading"
@@ -78196,6 +78374,13 @@
       },
       {
         "s": "OTC:SPRV",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:SPSAF",
         "f": [
           "no longer trading"
         ],
@@ -81706,7 +81891,7 @@
       {
         "s": "OTC:TKUND",
         "f": [
-          "empty symbol",
+          "no longer trading",
           "sloan_ratio_fy",
           "sloan_ratio_ttm",
           "zmijewski_score_fy",
@@ -81766,7 +81951,11 @@
       {
         "s": "OTC:TLCC",
         "f": [
-          "no longer trading"
+          "no longer trading",
+          "sloan_ratio_fy",
+          "sloan_ratio_ttm",
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": false
       },
@@ -82000,6 +82189,13 @@
           "zmijewski_score_ttm"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "OTC:TMNA",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
       },
       {
         "s": "OTC:TMNSF",
@@ -82470,6 +82666,13 @@
         "s": "OTC:TOSKF",
         "f": [
           "empty symbol"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:TOTTF",
+        "f": [
+          "no longer trading"
         ],
         "partial_ban": false
       },
@@ -83456,6 +83659,13 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:TURA",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "OTC:TUTH",
         "f": [
           "sloan_ratio_fy",
@@ -83779,6 +83989,13 @@
       },
       {
         "s": "OTC:TYOYF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:TYPMF",
         "f": [
           "no longer trading"
         ],
@@ -84155,7 +84372,7 @@
       {
         "s": "OTC:UGODF",
         "f": [
-          "empty symbol"
+          "no longer trading"
         ],
         "partial_ban": false
       },
@@ -85881,6 +86098,13 @@
         "f": [
           "no longer trading",
           "zmijewski_score_fy"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "OTC:VNRGF",
+        "f": [
+          "no longer trading"
         ],
         "partial_ban": false
       },
@@ -88241,6 +88465,13 @@
           "sloan_ratio_ttm"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "OTC:XBRAF",
+        "f": [
+          "no longer trading"
+        ],
+        "partial_ban": false
       },
       {
         "s": "OTC:XBTAF",
