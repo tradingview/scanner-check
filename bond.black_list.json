@@ -6811,7 +6811,6 @@
       {
         "s": "EURONEXT:0059N",
         "f": [
-          "empty nominal_value",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
@@ -7017,7 +7016,8 @@
       {
         "s": "EURONEXT:BPHAZ",
         "f": [
-          "empty nominal_value"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -7073,13 +7073,6 @@
         "partial_ban": false
       },
       {
-        "s": "EURONEXT:FERDE47_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:FR0000571168",
         "f": [
           "yield_to_maturity"
@@ -7104,7 +7097,6 @@
       {
         "s": "EURONEXT:FVIAB",
         "f": [
-          "empty nominal_value",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
@@ -7159,13 +7151,6 @@
         "s": "EURONEXT:REIB",
         "f": [
           "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:SBNOR176_PRO",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -7286,7 +7271,9 @@
       {
         "s": "EURONEXT:XS0221640070",
         "f": [
-          "empty nominal_value"
+          "current_yield",
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -7313,13 +7300,6 @@
           "empty nominal_value",
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EURONEXT:XS3285462563",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -170097,6 +170077,13 @@
         "partial_ban": true
       },
       {
+        "s": "FWB:AT0A3KST",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "FWB:BA21",
         "f": [
           "issue_amount less 1000"
@@ -170399,6 +170386,13 @@
           "old fundamental_currency_code"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "FWB:NLB3D2",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "FWB:NO1105762",
@@ -175406,13 +175400,6 @@
         "partial_ban": false
       },
       {
-        "s": "HAM:A3H2TV",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "HAM:A4YA",
         "f": [
           "issue_status null AND mat_date past"
@@ -175582,13 +175569,6 @@
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "HAN:A3H2TV",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "HAN:AT0A3NRE",
@@ -179727,13 +179707,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LSE:89PP",
-        "f": [
-          "close_pct over 500"
         ],
         "partial_ban": false
       },
@@ -188973,13 +188946,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "SWB:US588056BB60",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "SWB:US665772DB26",
