@@ -2684,16 +2684,15 @@
       {
         "s": "BCBA:MRCGD",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
       {
         "s": "BCBA:MRCGO",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "close_pct over 500",
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -27577,13 +27576,6 @@
           "empty nominal_value",
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FINRA:CHIN4537930",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
@@ -142813,14 +142805,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:JPM5991700",
-        "f": [
-          "issue_status matured or redeemed",
-          "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:JPM5991842",
         "f": [
           "issue_status matured or redeemed",
@@ -142849,13 +142833,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FINRA:JPM5996862",
-        "f": [
-          "issue_status null AND mat_date past"
         ],
         "partial_ban": false
       },
@@ -171172,6 +171149,7 @@
       {
         "s": "FWB:USU6422PAC2",
         "f": [
+          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": true
@@ -171937,13 +171915,6 @@
         "partial_ban": true
       },
       {
-        "s": "FWB:XS231594582",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FWB:XS231595104",
         "f": [
           "yield_to_maturity"
@@ -172167,7 +172138,8 @@
       {
         "s": "FWB:XS250089988",
         "f": [
-          "yield_to_maturity"
+          "yield_to_maturity",
+          "yield_to_put"
         ],
         "partial_ban": true
       },
@@ -175055,13 +175027,6 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
-      },
-      {
-        "s": "HAM:XS231594582",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
       },
       {
         "s": "HAM:XS232436425",
@@ -183764,13 +183729,6 @@
         "partial_ban": true
       },
       {
-        "s": "MUN:US588056BB6",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "MUN:US71656MAF6",
         "f": [
           "yield_to_call"
@@ -183881,13 +183839,6 @@
       },
       {
         "s": "MUN:XS229418769",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "MUN:XS231594582",
         "f": [
           "yield_to_call"
         ],
@@ -188892,7 +188843,6 @@
       {
         "s": "SWB:XS2343627712",
         "f": [
-          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": true
