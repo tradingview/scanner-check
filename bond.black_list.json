@@ -5978,13 +5978,6 @@
         "partial_ban": true
       },
       {
-        "s": "EURONEXT:KNLH01_PRO",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EURONEXT:NL0000120004",
         "f": [
           "old coupon_currency",
@@ -170111,6 +170104,7 @@
       {
         "s": "FWB:USU6422PAC2",
         "f": [
+          "yield_to_call",
           "yield_to_maturity"
         ],
         "partial_ban": true
@@ -173022,7 +173016,8 @@
       {
         "s": "GETTEX:A3LF7X",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -180132,13 +180127,6 @@
         "partial_ban": false
       },
       {
-        "s": "LUXSE:USP42009AF09",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "LUXSE:USP4983GAS95",
         "f": [
           "issue_status matured or redeemed",
@@ -180152,13 +180140,6 @@
           "yield_to_call"
         ],
         "partial_ban": true
-      },
-      {
-        "s": "LUXSE:USP9435AAA45",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
       },
       {
         "s": "LUXSE:USP9485MAB56",
@@ -182284,13 +182265,6 @@
         "s": "LUXSE:XS3277805571",
         "f": [
           "close_pct over 500"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "LUXSE:XS3335806678",
-        "f": [
-          "empty nominal_value"
         ],
         "partial_ban": false
       },
