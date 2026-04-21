@@ -1,13 +1,6 @@
 {
     "black_list": [
       {
-        "s": "ASX:CAMG",
-        "f": [
-          "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "ASX:TLSHY",
         "f": [
           "issue_status matured or redeemed",
@@ -7254,13 +7247,6 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "CHIXAU:CAMG",
-        "f": [
-          "issue_status null AND mat_date past"
         ],
         "partial_ban": false
       },
@@ -146737,7 +146723,6 @@
       {
         "s": "FINRA:MS5740235",
         "f": [
-          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -177899,6 +177884,13 @@
         "f": [
           "issue_status matured or redeemed",
           "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "LSE:89PP",
+        "f": [
+          "close_pct over 500"
         ],
         "partial_ban": false
       },
