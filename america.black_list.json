@@ -882,6 +882,13 @@
         "partial_ban": true
       },
       {
+        "s": "AMEX:SIM",
+        "f": [
+          "effective_interest_rate_on_debt_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "AMEX:SLSR",
         "f": [
           "effective_interest_rate_on_debt_ttm",
@@ -950,6 +957,13 @@
         "s": "AMEX:TGB",
         "f": [
           "neg_research_and_dev_fy"
+        ],
+        "partial_ban": true
+      },
+      {
+        "s": "AMEX:TOVX",
+        "f": [
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -3201,8 +3215,7 @@
       {
         "s": "NASDAQ:CNTA",
         "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -4415,8 +4428,7 @@
       {
         "s": "NASDAQ:FTCI",
         "f": [
-          "zmijewski_score_fy",
-          "zmijewski_score_ttm"
+          "zmijewski_score_fy"
         ],
         "partial_ban": true
       },
@@ -4898,7 +4910,7 @@
       {
         "s": "NASDAQ:HRZN",
         "f": [
-          "revenue_per_share_fq"
+          "ebitda_margin_ttm"
         ],
         "partial_ban": true
       },
@@ -7867,6 +7879,13 @@
         "partial_ban": true
       },
       {
+        "s": "NASDAQ:QTTB",
+        "f": [
+          "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "NASDAQ:QUBT",
         "f": [
           "ebitda_margin_fy",
@@ -8254,8 +8273,7 @@
       {
         "s": "NASDAQ:RYM",
         "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -8818,8 +8836,7 @@
       {
         "s": "NASDAQ:SSSS",
         "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -10373,8 +10390,7 @@
       {
         "s": "NYSE:ALC",
         "f": [
-          "neg_total_cash_dividends_paid_fh",
-          "neg_total_cash_dividends_paid_fq"
+          "neg_total_cash_dividends_paid_fh"
         ],
         "partial_ban": true
       },
@@ -11644,14 +11660,6 @@
         "partial_ban": false
       },
       {
-        "s": "NYSE:LDI",
-        "f": [
-          "neg_total_cash_dividends_paid_fh",
-          "neg_total_cash_dividends_paid_fq"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NYSE:LGI",
         "f": [
           "ebitda_margin_fy",
@@ -12017,13 +12025,6 @@
         "partial_ban": true
       },
       {
-        "s": "NYSE:OSCR",
-        "f": [
-          "effective_interest_rate_on_debt_ttm"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "NYSE:PAI",
         "f": [
           "ebitda_margin_fy",
@@ -12380,8 +12381,7 @@
       {
         "s": "NYSE:SQNS",
         "f": [
-          "ebitda_margin_fy",
-          "ebitda_margin_ttm"
+          "ebitda_margin_fy"
         ],
         "partial_ban": true
       },
@@ -26872,7 +26872,8 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
-          "empty symbol"
+          "empty symbol",
+          "neg_total_cash_dividends_paid_fq"
         ],
         "partial_ban": false
       },
@@ -32576,8 +32577,7 @@
       {
         "s": "OTC:DLAKF",
         "f": [
-          "neg_total_cash_dividends_paid_fh",
-          "neg_total_cash_dividends_paid_fq"
+          "neg_total_cash_dividends_paid_fh"
         ],
         "partial_ban": true
       },
@@ -38488,7 +38488,9 @@
       {
         "s": "OTC:FRTG",
         "f": [
-          "ebitda_margin_fy"
+          "ebitda_margin_fy",
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": true
       },
@@ -38560,7 +38562,9 @@
       {
         "s": "OTC:FSESF",
         "f": [
-          "no longer trading"
+          "no longer trading",
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": false
       },
@@ -40429,7 +40433,11 @@
         "f": [
           "ebitda_margin_fy",
           "ebitda_margin_ttm",
-          "no longer trading"
+          "no longer trading",
+          "sloan_ratio_fy",
+          "sloan_ratio_ttm",
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
         ],
         "partial_ban": false
       },
@@ -47901,6 +47909,9 @@
         "s": "OTC:ISRJF",
         "f": [
           "no longer trading",
+          "sloan_ratio_fy",
+          "sloan_ratio_ttm",
+          "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
         "partial_ban": false
@@ -53229,6 +53240,8 @@
       {
         "s": "OTC:LTCN",
         "f": [
+          "revenue_per_share_current",
+          "revenue_per_share_fq",
           "revenue_per_share_fy"
         ],
         "partial_ban": true
@@ -63318,6 +63331,8 @@
       {
         "s": "OTC:NWPG",
         "f": [
+          "cash_per_share_current",
+          "cash_per_share_fq",
           "zmijewski_score_fy",
           "zmijewski_score_ttm"
         ],
@@ -72003,6 +72018,14 @@
         "partial_ban": false
       },
       {
+        "s": "OTC:RMTO",
+        "f": [
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "OTC:RMTYS",
         "f": [
           "empty symbol"
@@ -79788,6 +79811,13 @@
         "partial_ban": true
       },
       {
+        "s": "OTC:STMGF",
+        "f": [
+          "effective_interest_rate_on_debt_fy"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "OTC:STMH",
         "f": [
           "no longer trading"
@@ -80157,6 +80187,14 @@
           "empty symbol"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "OTC:SUMMF",
+        "f": [
+          "zmijewski_score_fy",
+          "zmijewski_score_ttm"
+        ],
+        "partial_ban": true
       },
       {
         "s": "OTC:SUND",
@@ -84634,7 +84672,6 @@
         "s": "OTC:TYIBF",
         "f": [
           "neg_total_cash_dividends_paid_fh",
-          "neg_total_cash_dividends_paid_fq",
           "no longer trading"
         ],
         "partial_ban": false
