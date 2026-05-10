@@ -53,27 +53,6 @@
         "partial_ban": true
       },
       {
-        "s": "BAHRAIN:GDEV45.BND",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "BAHRAIN:IJ1Y260427",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "BAHRAIN:IJ6M291026",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "BAHRAIN:TB3M060526",
         "f": [
           "issue_status null AND mat_date past"
@@ -192066,8 +192045,9 @@
       {
         "s": "TASE:BLSR.P2",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "close_pct over 500",
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -192165,15 +192145,15 @@
       {
         "s": "TASE:MLSR.B14",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "TASE:NAWI.P10",
         "f": [
-          "empty nominal_value",
+          "close_pct over 500",
           "issue_status null AND mat_date past"
         ],
         "partial_ban": false
