@@ -7095,27 +7095,6 @@
         "partial_ban": true
       },
       {
-        "s": "EUROTLX:US900123DD96",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EUROTLX:US900123DK30",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "EUROTLX:US900123DN78",
-        "f": [
-          "empty nominal_value"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "EUROTLX:XS0071948540",
         "f": [
           "old coupon_currency",
@@ -175460,13 +175439,6 @@
         "partial_ban": true
       },
       {
-        "s": "GETTEX:CYTJ",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "GETTEX:DB0A",
         "f": [
           "yield_to_maturity"
@@ -175668,6 +175640,13 @@
           "empty nominal_value"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "HAM:104A",
+        "f": [
+          "current_yield"
+        ],
+        "partial_ban": true
       },
       {
         "s": "HAM:106232",
@@ -181125,7 +181104,8 @@
       {
         "s": "LSX:A1813F",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -181360,7 +181340,8 @@
       {
         "s": "LSX:A285BS",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -181453,6 +181434,7 @@
       {
         "s": "LSX:A2GS2K",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
@@ -181633,7 +181615,8 @@
       {
         "s": "LSX:A3KRJ1",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -184758,13 +184741,6 @@
       },
       {
         "s": "MUN:CYTI",
-        "f": [
-          "yield_to_call"
-        ],
-        "partial_ban": true
-      },
-      {
-        "s": "MUN:CYTJ",
         "f": [
           "yield_to_call"
         ],
@@ -188025,6 +188001,13 @@
           "yield_to_maturity"
         ],
         "partial_ban": true
+      },
+      {
+        "s": "SGX:BJHS",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
       },
       {
         "s": "SGX:BTWZ",
@@ -193436,6 +193419,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "SWB:XS2581879207",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "SWB:XS2581979171",
