@@ -6595,7 +6595,8 @@
       {
         "s": "EURONEXT:BPCGY",
         "f": [
-          "empty nominal_value"
+          "empty nominal_value",
+          "yield_to_maturity"
         ],
         "partial_ban": false
       },
@@ -6671,6 +6672,13 @@
           "old coupon_currency"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "EURONEXT:FR0000578544",
+        "f": [
+          "yield_to_maturity"
+        ],
+        "partial_ban": true
       },
       {
         "s": "EURONEXT:FR0014013LA4",
@@ -175615,6 +175623,27 @@
         "partial_ban": true
       },
       {
+        "s": "HKEX:40436",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "HKEX:40439",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "HKEX:40448",
+        "f": [
+          "empty nominal_value"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "HKEX:40501",
         "f": [
           "outstanding_amount less 1000"
@@ -187669,13 +187698,6 @@
         "partial_ban": true
       },
       {
-        "s": "OTCB:UI05Y",
-        "f": [
-          "yield_to_maturity"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "OTCB:US01",
         "f": [
           "yield_to_maturity"
@@ -188439,13 +188461,6 @@
         "partial_ban": false
       },
       {
-        "s": "SSE:115447",
-        "f": [
-          "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "SSE:115450",
         "f": [
           "issue_status null AND mat_date past"
@@ -188456,14 +188471,6 @@
         "s": "SSE:115451",
         "f": [
           "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "SSE:115454",
-        "f": [
-          "issue_status matured or redeemed",
-          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
