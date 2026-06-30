@@ -3640,7 +3640,8 @@
         "s": "BCBA:SPC1O.CI",
         "f": [
           "close_pct over 500",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -174712,6 +174713,13 @@
         "partial_ban": false
       },
       {
+        "s": "HAM:XS234876783",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "HAM:XS235505916",
         "f": [
           "issue_status matured or redeemed",
@@ -175734,7 +175742,7 @@
       {
         "s": "LS:A2RYD9",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -179283,7 +179291,8 @@
       {
         "s": "LSE:BR90",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -179871,7 +179880,8 @@
       {
         "s": "LSE:YD87",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
