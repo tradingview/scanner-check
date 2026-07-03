@@ -172327,6 +172327,13 @@
         "partial_ban": true
       },
       {
+        "s": "FWB:XS228791245",
+        "f": [
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FWB:XS229418769",
         "f": [
           "yield_to_call"
@@ -188038,7 +188045,8 @@
       {
         "s": "SSE:152939",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
