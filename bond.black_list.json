@@ -750972,8 +750972,8 @@
       {
         "s": "TASE:AFPR.P5",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "close_pct over 500",
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -751062,8 +751062,9 @@
       {
         "s": "TASE:FTAL.P2",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "close_pct over 500",
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -751169,16 +751170,16 @@
       {
         "s": "TASE:SHLD.B17",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "TASE:SHLD.B18",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
