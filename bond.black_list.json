@@ -91627,9 +91627,9 @@
       {
         "s": "FINRA:C4635090",
         "f": [
-          "empty nominal_value",
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -93339,7 +93339,6 @@
       {
         "s": "FINRA:C5386317",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -93625,7 +93624,6 @@
       {
         "s": "FINRA:C5485381",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -93946,9 +93944,9 @@
       {
         "s": "FINRA:C5596299",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past",
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -94052,7 +94050,6 @@
       {
         "s": "FINRA:C5617158",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -94273,7 +94270,6 @@
       {
         "s": "FINRA:C5654889",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -107507,8 +107503,7 @@
       {
         "s": "FINRA:CS4582556",
         "f": [
-          "empty nominal_value",
-          "issue_status null AND mat_date past",
+          "issue_status matured or redeemed",
           "no longer trading"
         ],
         "partial_ban": false
@@ -107942,7 +107937,6 @@
       {
         "s": "FINRA:CS5538396",
         "f": [
-          "empty nominal_value",
           "no longer trading"
         ],
         "partial_ban": false
@@ -110458,7 +110452,6 @@
       {
         "s": "FINRA:CSWZ5575141",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -110480,16 +110473,15 @@
       {
         "s": "FINRA:CSWZ5601247",
         "f": [
-          "empty nominal_value",
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "FINRA:CSWZ5601248",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -118541,7 +118533,6 @@
       {
         "s": "FINRA:DOW5386344",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -119144,7 +119135,6 @@
       {
         "s": "FINRA:DOW5601249",
         "f": [
-          "empty nominal_value",
           "no longer trading"
         ],
         "partial_ban": false
@@ -419114,13 +419104,6 @@
         "partial_ban": false
       },
       {
-        "s": "FWB:XS228132438",
-        "f": [
-          "current_yield"
-        ],
-        "partial_ban": true
-      },
-      {
         "s": "FWB:XS228258750",
         "f": [
           "current_yield",
@@ -691934,13 +691917,6 @@
         "partial_ban": false
       },
       {
-        "s": "SWB:DE000DB9U8W0",
-        "f": [
-          "close_pct over 500"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "SWB:DE000DB9U9D8",
         "f": [
           "close_pct over 500"
@@ -692469,13 +692445,6 @@
         "f": [
           "close_pct over 500",
           "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "SWB:DE000DB9WFP5",
-        "f": [
-          "close_pct over 500"
         ],
         "partial_ban": false
       },
@@ -709451,6 +709420,13 @@
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "SWB:US71656MAF68",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
       },
       {
         "s": "SWB:US72650RBL50",
@@ -749943,6 +749919,13 @@
         "partial_ban": false
       },
       {
+        "s": "TRADEGATE:US71656MAF6",
+        "f": [
+          "yield_to_call"
+        ],
+        "partial_ban": true
+      },
+      {
         "s": "TRADEGATE:US87264ABS3",
         "f": [
           "yield_to_call"
@@ -754196,13 +754179,6 @@
       },
       {
         "s": "VIE:AT0000A2VD94",
-        "f": [
-          "empty symbol"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "VIE:AT0000A2VE28",
         "f": [
           "empty symbol"
         ],
