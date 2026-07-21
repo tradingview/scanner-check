@@ -11367,8 +11367,7 @@
         "s": "BCBA:PFC3O",
         "f": [
           "close_pct over 500",
-          "yield_to_call",
-          "yield_to_maturity"
+          "yield_to_call"
         ],
         "partial_ban": false
       },
@@ -125157,13 +125156,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:FFCD3925839",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:FFCD3927155",
         "f": [
           "empty symbol"
@@ -137523,9 +137515,9 @@
       {
         "s": "FINRA:FFCD5203993",
         "f": [
-          "no longer trading"
+          "yield_to_call"
         ],
-        "partial_ban": false
+        "partial_ban": true
       },
       {
         "s": "FINRA:FFCD5203999",
@@ -339743,13 +339735,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:KTBK5825589",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:KTWO4533373",
         "f": [
           "no longer trading"
@@ -381799,13 +381784,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:SBIN5693776",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:SBIN5908121",
         "f": [
           "no longer trading"
@@ -385429,8 +385407,9 @@
       {
         "s": "FINRA:SINGY5137538",
         "f": [
-          "issue_status null AND mat_date past",
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -561855,6 +561834,14 @@
         "partial_ban": false
       },
       {
+        "s": "LUXSE:XS2432183908",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "LUXSE:XS2432299100",
         "f": [
           "no longer trading"
@@ -708220,7 +708207,8 @@
       {
         "s": "SWB:XS2284332769",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -708448,6 +708436,14 @@
         "s": "SWB:XS2431024996",
         "f": [
           "empty symbol"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "SWB:XS2432183908",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
