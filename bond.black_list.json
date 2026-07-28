@@ -1056,7 +1056,8 @@
       {
         "s": "ATHEX:G230719A2",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -411197,6 +411198,14 @@
         "partial_ban": false
       },
       {
+        "s": "FWB:XS205574751",
+        "f": [
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FWB:XS206069821",
         "f": [
           "no longer trading"
@@ -416081,8 +416090,7 @@
       {
         "s": "HAM:A3MQXW",
         "f": [
-          "yield_to_call",
-          "yield_to_maturity"
+          "yield_to_call"
         ],
         "partial_ban": true
       },
@@ -601701,13 +601709,6 @@
         "partial_ban": false
       },
       {
-        "s": "NSE:739TN33.SG",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "NSE:739TN33A.SG",
         "f": [
           "empty symbol"
@@ -618060,7 +618061,8 @@
         "s": "NSE:85PFL26.N7",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -618312,7 +618314,8 @@
       {
         "s": "NSE:875PF26.N8",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -740952,6 +740955,7 @@
       {
         "s": "TRADEGATE:US78016HZX1",
         "f": [
+          "issue_status matured or redeemed",
           "outstanding_amount less 1000"
         ],
         "partial_ban": false
