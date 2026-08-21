@@ -230159,13 +230159,6 @@
         "partial_ban": false
       },
       {
-        "s": "FINRA:FHLN6096692",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FINRA:FHLN6096693",
         "f": [
           "issue_status matured or redeemed",
@@ -345964,13 +345957,6 @@
         "s": "FINRA:MET6363064",
         "f": [
           "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FINRA:MET6487857",
-        "f": [
-          "empty symbol"
         ],
         "partial_ban": false
       },
@@ -562376,7 +562362,8 @@
         "s": "SSE:152167",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -562481,7 +562468,8 @@
       {
         "s": "SSE:152251",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -591641,16 +591629,18 @@
       {
         "s": "SSE:188610",
         "f": [
-          "issue_status null AND mat_date past",
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "SSE:188625",
         "f": [
-          "issue_status null AND mat_date past",
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
