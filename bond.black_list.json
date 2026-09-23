@@ -3876,13 +3876,6 @@
         "partial_ban": false
       },
       {
-        "s": "BSESOF:VEGC",
-        "f": [
-          "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "BSESOF:VPHB",
         "f": [
           "no longer trading"
@@ -28284,7 +28277,6 @@
       {
         "s": "EURONEXT:FR001401B2N0",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -316708,7 +316700,6 @@
       {
         "s": "FINRA:GS6519646",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -316716,7 +316707,6 @@
       {
         "s": "FINRA:GS6520459",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -316724,7 +316714,6 @@
       {
         "s": "FINRA:GS6520463",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -316732,7 +316721,6 @@
       {
         "s": "FINRA:GS6520466",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -347348,7 +347336,7 @@
         "s": "FINRA:MFW5251684",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -357588,7 +357576,6 @@
       {
         "s": "FINRA:MS6519652",
         "f": [
-          "empty nominal_value",
           "empty symbol"
         ],
         "partial_ban": false
@@ -359344,8 +359331,16 @@
         "partial_ban": false
       },
       {
+        "s": "FINRA:NFE5157983",
+        "f": [
+          "issue_status matured or redeemed"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FINRA:NFE5767339",
         "f": [
+          "issue_status matured or redeemed",
           "no longer trading"
         ],
         "partial_ban": false
@@ -359353,7 +359348,8 @@
       {
         "s": "FINRA:NFE5767340",
         "f": [
-          "incorrect yield_to"
+          "incorrect yield_to",
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -418155,13 +418151,6 @@
         "partial_ban": false
       },
       {
-        "s": "FWB:US298785JP2",
-        "f": [
-          "incorrect yield_to"
-        ],
-        "partial_ban": false
-      },
-      {
         "s": "FWB:US30050BAG6",
         "f": [
           "issue_status matured or redeemed",
@@ -418634,9 +418623,17 @@
         "partial_ban": false
       },
       {
+        "s": "FWB:US644393AB6",
+        "f": [
+          "issue_status matured or redeemed"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FWB:US644393AC4",
         "f": [
-          "incorrect yield_to"
+          "incorrect yield_to",
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -419647,9 +419644,17 @@
         "partial_ban": false
       },
       {
+        "s": "FWB:USU6422PAC2",
+        "f": [
+          "issue_status matured or redeemed"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "FWB:USU6422PAD0",
         "f": [
-          "incorrect yield_to"
+          "incorrect yield_to",
+          "issue_status matured or redeemed"
         ],
         "partial_ban": false
       },
@@ -421007,13 +421012,6 @@
         "s": "FWB:XS240672715",
         "f": [
           "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "FWB:XS240701979",
-        "f": [
-          "incorrect yield_to"
         ],
         "partial_ban": false
       },
@@ -423006,7 +423004,8 @@
       {
         "s": "GETTEX:A2R3QM",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -424029,6 +424028,13 @@
         "s": "GETTEX:A3L29T",
         "f": [
           "no longer trading"
+        ],
+        "partial_ban": false
+      },
+      {
+        "s": "GETTEX:A3L2GE",
+        "f": [
+          "incorrect yield_to"
         ],
         "partial_ban": false
       },
@@ -440503,7 +440509,8 @@
         "s": "LS:A2R3QM",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -455494,8 +455501,9 @@
       {
         "s": "LSE:19XV",
         "f": [
-          "issue_status null AND mat_date past",
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -473023,7 +473031,8 @@
         "s": "LSX:A2R3QM",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -551943,7 +551952,6 @@
       {
         "s": "MUN:134695",
         "f": [
-          "incorrect yield_to",
           "old coupon_currency",
           "old fundamental_currency_code"
         ],
@@ -552059,13 +552067,6 @@
         "s": "MUN:CAVB",
         "f": [
           "issue_status null AND mat_date past"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "MUN:CH34258763",
-        "f": [
-          "incorrect yield_to"
         ],
         "partial_ban": false
       },
@@ -552220,6 +552221,13 @@
           "incorrect yield_to"
         ],
         "partial_ban": false
+      },
+      {
+        "s": "MUN:NZ8A",
+        "f": [
+          "current_yield"
+        ],
+        "partial_ban": true
       },
       {
         "s": "MUN:OFC3",
@@ -557572,6 +557580,13 @@
         "partial_ban": false
       },
       {
+        "s": "SIX:MUN219",
+        "f": [
+          "incorrect yield_to"
+        ],
+        "partial_ban": false
+      },
+      {
         "s": "SIX:MXN058.MXN",
         "f": [
           "no longer trading"
@@ -557689,13 +557704,6 @@
         "s": "SIX:SIG26.EUR",
         "f": [
           "no longer trading"
-        ],
-        "partial_ban": false
-      },
-      {
-        "s": "SIX:SIX211",
-        "f": [
-          "incorrect yield_to"
         ],
         "partial_ban": false
       },
@@ -635757,7 +635765,8 @@
       {
         "s": "SWB:XS2012546714",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -636031,7 +636040,8 @@
       {
         "s": "SWB:XS2386880780",
         "f": [
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -644985,7 +644995,8 @@
         "s": "SZSE:105926",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -644993,7 +645004,8 @@
         "s": "SZSE:105927",
         "f": [
           "empty symbol",
-          "issue_status null AND mat_date past"
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -688586,21 +688598,27 @@
       {
         "s": "VIE:XS2442499575",
         "f": [
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "VIE:XS2442499658",
         "f": [
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
       {
         "s": "VIE:XS2442499732",
         "f": [
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -688614,7 +688632,9 @@
       {
         "s": "VIE:XS2442513318",
         "f": [
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -688649,7 +688669,9 @@
       {
         "s": "VIE:XS2458709495",
         "f": [
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -688921,7 +688943,9 @@
       {
         "s": "VIE:XS2580071665",
         "f": [
-          "no longer trading"
+          "issue_status matured or redeemed",
+          "no longer trading",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
@@ -689268,7 +689292,9 @@
       {
         "s": "VIE:XS2696274179",
         "f": [
-          "empty symbol"
+          "empty symbol",
+          "issue_status matured or redeemed",
+          "outstanding_amount less 1000"
         ],
         "partial_ban": false
       },
